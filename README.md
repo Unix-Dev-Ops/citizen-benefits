@@ -41,7 +41,7 @@ Currently focused on US federal programs (SNAP, Medicaid/CHIP, EITC, LIHEAP, WIC
 
 This project was built as the capstone for the Google/Kaggle 5-Day AI Agents Intensive Vibe Coding Course - Agents for Good track.
 
-[Full Kaggle Writeup](KAGGLE-WRITEUP.md)
+[Full Kaggle Writeup](kaggle-writeup.md)
 
 ## Getting Started
 
