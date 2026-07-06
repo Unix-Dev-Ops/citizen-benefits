@@ -8,9 +8,9 @@
 
 **Citizen Benefits** - Find the benefits you qualify for.
 
-Live demo: https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app
-Code: https://github.com/Unix-Dev-Ops/citizen-benefits
-Video: [VIDEO LINK]
+- Live demo: https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app
+- Code: https://github.com/Unix-Dev-Ops/citizen-benefits
+- Video: [VIDEO LINK]
 
 ---
 
@@ -19,15 +19,15 @@ Video: [VIDEO LINK]
 Unclaimed benefits are a worldwide problem: people everywhere miss support
 they are entitled to because eligibility systems are opaque. Citizen Benefits
 starts with the United States, where millions of eligible people never claim
-benefits they qualify for. The rules
-are confusing, they changed substantially under recent federal legislation (2025), they
-vary by state, and asking for help usually means handing over
-personal information. Citizen Benefits is an autonomous agent that takes ONLY
-anonymous situational factors (state, household size, income band, age band,
-disability, pregnancy, children, veteran status) and estimates which of five
-federal programs a person likely qualifies for: SNAP, Medicaid/CHIP, EITC,
-LIHEAP, and WIC. It explains why in plain language, in four languages, and
-routes the person to the official application portal for their state.
+benefits they qualify for. The rules are confusing, they changed substantially
+under recent federal legislation (2025), they vary by state, and asking for
+help usually means handing over personal information. Citizen Benefits is an
+autonomous agent that takes ONLY anonymous situational factors (state,
+household size, income band, age band, disability, pregnancy, children,
+veteran status) and estimates which of five federal programs a person likely
+qualifies for: SNAP, Medicaid/CHIP, EITC, LIHEAP, and WIC. It explains why in
+plain language, in four languages, and routes the person to the official
+application portal for their state.
 
 It is a navigator, not a determiner. Every single response carries the
 disclaimer: "This is an estimate, not a determination. Rules change. Only the
