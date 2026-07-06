@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Citizen Benefits: Find the Benefits You Qualify For</title>
+    <meta name="description" content="Free, anonymous eligibility checks for SNAP, Medicaid/CHIP, EITC, LIHEAP, and WIC. Grounded in current law, with official application links.">
+    <meta name="keywords" content="benefits eligibility, SNAP checker, Medicaid eligibility, EITC calculator, WIC, LIHEAP, benefits navigator">
+    <link rel="canonical" href="https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/">
+    <meta name="author" content="Citizen Benefits">
+    <meta name="publisher" content="Citizen Benefits">
+    <meta name="dcterms.audience" content="global">
+    <meta name="robots" content="index,follow">
+    <meta name="rating" content="safe for kids">
+
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/">
+    <meta property="og:title" content="Citizen Benefits: Find the Benefits You Qualify For">
+    <meta property="og:description" content="Free, anonymous eligibility checks for SNAP, Medicaid/CHIP, EITC, LIHEAP, and WIC. Grounded in current law, with official application links.">
+    <meta property="og:image" content="https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/static/assets/img/og-card.png">
+    <meta property="og:image:secure_url" content="https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/static/assets/img/og-card.png">
+    <meta property="og:image:alt" content="Citizen Benefits: a family walking toward opportunity">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Citizen Benefits">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Citizen Benefits: Find the Benefits You Qualify For">
+    <meta name="twitter:description" content="Free, anonymous eligibility checks for SNAP, Medicaid/CHIP, EITC, LIHEAP, and WIC. Grounded in current law, with official application links.">
+    <meta name="twitter:image:src" content="https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/static/assets/img/og-card.png">
+
+    <!-- Icons + Manifest (existing) -->
+    <link rel="icon" type="image/x-icon" href="/static/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/favicon-180.png">
+    <link rel="manifest" href="/static/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#030712">
+    <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#030712">
+
+    <!-- Fonts + styles (existing) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/assets/css/styles.min.css?v=5.0">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/#website",
+          "url": "https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/",
+          "name": "Citizen Benefits Finder",
+          "description": "An independent, anonymous eligibility screening tool for public assistance programs."
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/#webapp",
+          "url": "https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/",
+          "name": "Citizen Benefits Navigator",
+          "applicationCategory": "ReferenceApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript and HTML5 support",
+          "inLanguage": ["en", "es", "fr", "de"],
+          "isAccessibleForFree": true,
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "Anonymous eligibility checks for SNAP, Medicaid/CHIP, EITC, LIHEAP, and WIC based on current regulations.",
+          "image": "https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app/static/assets/img/og-card.png"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Persistent Sticky Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo / Left -->
+            <a href="/" class="nav-logo">
+                <div class="nav-logo-icon-wrapper">
+                    <svg class="nav-logo-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 11 2 2 4-4"/>
+                    </svg>
+                </div>
+                <span class="nav-logo-text">Citizen Benefits</span>
+            </a>
+
+            <!-- Center Links -->
+            <div class="nav-links">
+                <a href="#whySection" class="nav-link" id="navHowItWorks">Our Mission</a>
+                <a href="#supportedPrograms" class="nav-link" id="navSupportedPrograms">Supported Programs</a>
+                <a href="#appFooter" class="nav-link" id="navPrivacyPrinciples">Privacy Principles</a>
+            </div>
+
+            <!-- Right Selectors -->
+            <div class="nav-selectors">
+                <!-- Country Selector Wrapper -->
+                <div class="nav-select-wrapper country-wrapper">
+                    <svg class="nav-select-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    <select id="countrySelect" class="nav-select">
+                        <option value="US">🇺🇸 United States</option>
+                        <option value="CA">🇨🇦 Canada</option>
+                        <option value="GB">🇬🇧 United Kingdom</option>
+                        <option value="AU">🇦🇺 Australia</option>
+                        <option value="DE">🇩🇪 Germany</option>
+                        <option value="FR">🇫🇷 France</option>
+                        <option value="ES">🇪🇸 Spain</option>
+                        <option value="MX">🇲🇽 Mexico</option>
+                    </select>
+                </div>
+
+                <!-- Language Selector Wrapper -->
+                <div class="nav-select-wrapper lang-wrapper">
+                    <select id="langSelect" class="nav-select">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="fr">FR</option>
+                        <option value="de">DE</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Top Hero Header -->
+        <header class="hero-header">
+            <div class="updated-pill">
+                <span class="pill-dot"></span>
+                <span id="updatedPillText">UPDATED FOR FISCAL YEAR 2026 ELIGIBILITY LEVELS</span>
+            </div>
+            <h1 class="hero-title" id="heroTitle">Discover the support you've <span class="gradient-text">already earned.</span></h1>
+            <p class="intro-text" id="introText">
+                This secure, anonymous portal helps individuals explore major federal assistance initiatives like SNAP, Medicaid, EITC, LIHEAP, and WIC customized directly to your household dynamics.
+            </p>
+
+            <div class="features-panel">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-header">
+                            <span class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="m9 11 2 2 4-4"/>
+                                </svg>
+                            </span>
+                            <div class="feature-title" id="featureTitle1">100% Anonymous</div>
+                        </div>
+                        <div class="feature-desc" id="featureDesc1">No names, emails, or Social Security numbers are required.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-header">
+                            <span class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                </svg>
+                            </span>
+                            <div class="feature-title" id="featureTitle2">Instant Estimate</div>
+                        </div>
+                        <div class="feature-desc" id="featureDesc2">Real-time calculations across multiple federal programs.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-header">
+                            <span class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </span>
+                            <div class="feature-title" id="featureTitle3">State-Localized</div>
+                        </div>
+                        <div class="feature-desc" id="featureDesc3">Matches current income guidelines based on your geography.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-header">
+                            <span class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                                </svg>
+                            </span>
+                            <div class="feature-title" id="featureTitle4">Direct Connect</div>
+                        </div>
+                        <div class="feature-desc" id="featureDesc4">Official agency application destinations available instantly.</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Global Expansion Panel (Hidden by default using .hidden class) -->
+        <div id="globalPanel" class="panel global-card hidden">
+            <div id="globalFlag"></div>
+            <h2 class="global-title" id="globalTitle">Expanding Globally</h2>
+            <p class="global-description" id="globalDesc">
+                Citizen Benefits is expanding globally. Support for <span id="targetCountryName">Canada</span> is coming soon. Sign up to be notified.
+            </p>
+            <!--
+            <div class="notify-form">
+                <input type="email" id="notifyInput" class="notify-input" placeholder="Enter your email address" required>
+                <button type="button" class="btn-notify" id="btnNotify">Notify Me</button>
+            </div>
+            -->
+            <div class="coming-soon-text" id="globalComingSoon" style="font-weight: bold; text-align: center; color: #60a5fa;">(This functionality is coming soon!)</div>
+            <p class="why-text" id="globalWhyText">
+                We are expanding soon to support additional countries so families everywhere can access similar information for their home nations.
+            </p>
+        </div>
+
+        <!-- Form/Intake Panel -->
+        <div id="intakePanel" class="panel">
+            <div class="panel-header">
+                <div class="panel-header-left">
+                    <svg class="panel-header-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" y1="21" x2="4" y2="14"/>
+                        <line x1="4" y1="10" x2="4" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12" y2="3"/>
+                        <line x1="20" y1="21" x2="20" y2="16"/>
+                        <line x1="20" y1="12" x2="20" y2="3"/>
+                        <line x1="1" y1="14" x2="7" y2="14"/>
+                        <line x1="9" y1="8" x2="15" y2="8"/>
+                        <line x1="17" y1="16" x2="23" y2="16"/>
+                    </svg>
+                    <div class="panel-header-text">
+                        <h2 id="intakeTitle" class="panel-title">Eligibility Qualifier Tool</h2>
+                        <p id="intakeSubtitle" class="panel-subtitle">Fill out the variables below to check your initial standing.</p>
+                    </div>
+                </div>
+                <div class="panel-badge-btn" id="intakeBadgeText">ANONYMOUS CHECK</div>
+            </div>
+            <hr class="panel-divider">
+            <form id="eligibilityForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <div class="status-header">
+                            <label for="status" id="labelStatus">Citizenship Status</label>
+                            <span class="info-trigger" id="statusTrigger">
+                                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <circle cx="12" cy="8" r="1" fill="currentColor"></circle>
+                                </svg>
+                                <span class="info-popup" id="statusInfoPopup">
+                                    <span class="info-popup-header">
+                                        <span class="info-popup-title" id="statusPopupTitle">Citizenship Status Requirements</span>
+                                    </span>
+                                    <span class="info-popup-body" id="statusPopupBody">Under federal regulations, citizenship or qualifying immigration status is the initial requirement for program eligibility. Supported statuses include US Citizen, US National, Lawful Permanent Resident, COFA Citizen, and Veteran or Active Duty Military.</span>
+                                </span>
+                            </span>
+                        </div>
+                        <select id="status" class="form-select" required>
+                            <option value="" disabled selected>Select your status</option>
+                            <option value="us_citizen">US Citizen</option>
+                            <option value="us_national">US National</option>
+                            <option value="lawful_permanent_resident">Lawful Permanent Resident (LPR)</option>
+                            <option value="cofa_citizen">COFA Citizen</option>
+                            <option value="veteran_or_military">Veteran or Active Duty Military</option>
+                            <option value="other_not_listed">Other Status / Non-Citizen</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state" id="labelState">State (2-letter Code)</label>
+                        <select id="state" class="form-select" required>
+                            <option value="" disabled selected>Select your state</option>
+                            <option value="AL">AL (Alabama)</option>
+                            <option value="AK">AK (Alaska)</option>
+                            <option value="AZ">AZ (Arizona)</option>
+                            <option value="AR">AR (Arkansas)</option>
+                            <option value="CA">CA (California)</option>
+                            <option value="CO">CO (Colorado)</option>
+                            <option value="CT">CT (Connecticut)</option>
+                            <option value="DE">DE (Delaware)</option>
+                            <option value="FL">FL (Florida)</option>
+                            <option value="GA">GA (Georgia)</option>
+                            <option value="HI">HI (Hawaii)</option>
+                            <option value="ID">ID (Idaho)</option>
+                            <option value="IL">IL (Illinois)</option>
+                            <option value="IN">IN (Indiana)</option>
+                            <option value="IA">IA (Iowa)</option>
+                            <option value="KS">KS (Kansas)</option>
+                            <option value="KY">KY (Kentucky)</option>
+                            <option value="LA">LA (Louisiana)</option>
+                            <option value="ME">ME (Maine)</option>
+                            <option value="MD">MD (Maryland)</option>
+                            <option value="MA">MA (Massachusetts)</option>
+                            <option value="MI">MI (Michigan)</option>
+                            <option value="MN">MN (Minnesota)</option>
+                            <option value="MS">MS (Mississippi)</option>
+                            <option value="MO">MO (Missouri)</option>
+                            <option value="MT">MT (Montana)</option>
+                            <option value="NE">NE (Nebraska)</option>
+                            <option value="NV">NV (Nevada)</option>
+                            <option value="NH">NH (New Hampshire)</option>
+                            <option value="NJ">NJ (New Jersey)</option>
+                            <option value="NM">NM (New Mexico)</option>
+                            <option value="NY">NY (New York)</option>
+                            <option value="NC">NC (North Carolina)</option>
+                            <option value="ND">ND (North Dakota)</option>
+                            <option value="OH">OH (Ohio)</option>
+                            <option value="OK">OK (Oklahoma)</option>
+                            <option value="OR">OR (Oregon)</option>
+                            <option value="PA">PA (Pennsylvania)</option>
+                            <option value="RI">RI (Rhode Island)</option>
+                            <option value="SC">SC (South Carolina)</option>
+                            <option value="SD">SD (South Dakota)</option>
+                            <option value="TN">TN (Tennessee)</option>
+                            <option value="TX">TX (Texas)</option>
+                            <option value="UT">UT (Utah)</option>
+                            <option value="VT">VT (Vermont)</option>
+                            <option value="VA">VA (Virginia)</option>
+                            <option value="WA">WA (Washington)</option>
+                            <option value="WV">WV (West Virginia)</option>
+                            <option value="WI">WI (Wisconsin)</option>
+                            <option value="WY">WY (Wyoming)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip" id="labelZip">ZIP Code</label>
+                        <input type="text" id="zip" class="form-input" placeholder="e.g. 43215" pattern="\d{5}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="household_size" id="labelHouseholdSize">Household Size</label>
+                        <input type="number" id="household_size" class="form-input" value="1" min="1" max="20" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="total_income_band" id="labelIncomeBand">Income Band (vs Poverty Level)</label>
+                        <select id="total_income_band" class="form-select" required>
+                            <option value="" disabled selected>Select your income level</option>
+                            <option value="under_50_fpl">Under 50% of Federal Poverty Level (FPL)</option>
+                            <option value="50_100_fpl">50% to 100% of FPL</option>
+                            <option value="100_130_fpl">100% to 130% of FPL</option>
+                            <option value="130_200_fpl">130% to 200% of FPL</option>
+                            <option value="over_200_fpl">Over 200% of FPL</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="earned_income_share" id="labelEarnedIncomeShare">Earned Income Share</label>
+                        <select id="earned_income_share" class="form-select" required>
+                            <option value="" disabled selected>Select earned income share</option>
+                            <option value="none">None (all unearned income)</option>
+                            <option value="some">Some (less than half)</option>
+                            <option value="most">Most (more than half)</option>
+                            <option value="all">All (100% earned income)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age_band" id="labelAgeBand">Age Bracket</label>
+                        <select id="age_band" class="form-select" required>
+                            <option value="" disabled selected>Select your age bracket</option>
+                            <option value="under_18">Child/Youth, Under 18</option>
+                            <option value="18_59">Adult, Ages 18-59</option>
+                            <option value="60_64">Older Adult, Ages 60-64</option>
+                            <option value="65_plus">Elderly, Age 65+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="num_children" id="labelNumChildren">Number of Children in Household</label>
+                        <input type="number" id="num_children" class="form-input" value="0" min="0" max="20" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label id="labelCircumstances">Household Circumstances</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="has_disability" name="has_disability" class="form-checkbox">
+                                <span id="spanDisability">Member with Disability</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="is_pregnant" name="is_pregnant" class="form-checkbox">
+                                <span id="spanPregnant">Member is Pregnant</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="is_married" name="is_married" class="form-checkbox">
+                                <span id="spanMarried">Married Filing Jointly</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="is_veteran_or_military" name="is_veteran_or_military" class="form-checkbox">
+                                <span id="spanVeteran">Veteran or Military Status</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="btnSubmit" class="btn-submit">
+                        <span id="btnSubmitText">Start Here</span>
+                        <svg class="btn-submit-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    
+                    <div class="submit-badges">
+                        <div class="badge-item">
+                            <svg class="badge-icon green-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span id="badgeNoSignup">No sign-ups required</span>
+                        </div>
+                        <span class="badge-dot">·</span>
+                        <div class="badge-item">
+                            <svg class="badge-icon green-lock" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <span id="badgeDataPrivacy">Data never stored or shared</span>
+                        </div>
+                    </div>
+
+                    <hr class="badges-divider">
+                </div>
+            </form>
+            <p class="form-note" id="formNote">
+                How it works: Share a few anonymous details about your household. Receive a straightforward estimate of programs you may qualify for. Get direct links to official application resources in your state.
+                <br><br>
+                This is an estimate only, based on current rules. Only the government agency makes the final decision on eligibility.
+            </p>
+        </div>
+
+        <!-- Loading spinner (Hidden by default using .hidden class) -->
+        <div id="loadingSpinner" class="spinner-wrapper hidden">
+            <div class="spinner"></div>
+            <div class="spinner-text" id="spinnerText">Analyzing eligibility criteria...</div>
+            <div id="spinnerTimer" class="spinner-timer">Time: 0s</div>
+        </div>
+
+        <!-- Query Time Display -->
+        <div id="queryTimeDisplay" class="query-time-display hidden"></div>
+
+        <!-- Results Panel (Hidden by default using .hidden class) -->
+        <div id="resultsPanel" class="panel results-section hidden">
+            <h2 class="results-header" id="resultsHeader">Your Eligibility Estimates</h2>
+            <div id="resultsContainer"></div>
+        </div>
+
+        <!-- Error Panel (Hidden by default using .hidden class) -->
+        <div id="errorPanel" class="error-banner hidden"></div>
+
+        <!-- Why Section / Grid -->
+        <hr class="section-divider">
+        <div class="why-section" id="whySection">
+            <h2 class="why-title" id="whyTitle">Our Mission</h2>
+            <p class="why-text" id="whyText">
+                Federal programs are historically overwhelming and difficult to navigate. We provide paths over barriers by clarifying guidelines cleanly with total customer anonymity.
+            </p>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-card-icon-wrapper why-nav-icon-wrapper">
+                        <!-- Structured Navigation Icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title" id="whyCardTitle1">Structured Navigation</h3>
+                    <p class="why-card-text" id="whyCardDesc1">No more endless scrolling of confusing government forums. We unify critical requirements into simplified decision interfaces.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-icon-wrapper why-encrypt-icon-wrapper">
+                        <!-- Completely Encrypted Icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+                            <line x1="1" y1="1" x2="23" y2="23"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title" id="whyCardTitle2">Completely Encrypted</h3>
+                    <p class="why-card-text" id="whyCardDesc2">Privacy isn't a feature; it's our engine. Zero inputs are sent to remote servers or kept on analytical cookies.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-icon-wrapper why-access-icon-wrapper">
+                        <!-- Direct Gateway Access Icon -->
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="7" y1="17" x2="17" y2="7"/>
+                            <polyline points="7 7 17 7 17 17"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title" id="whyCardTitle3">Direct Gateway Access</h3>
+                    <p class="why-card-text" id="whyCardDesc3">Skip search engine clutter. Receive instant, authentic deep links mapping directly inside state run portals.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Supported Programs Section -->
+        <div class="programs-section" id="supportedPrograms">
+            <h2 class="programs-section-title" id="programsSectionTitle">SUPPORTED PROGRAMS MONITORED</h2>
+            <div class="programs-grid">
+                <div class="program-box">
+                    <div class="program-box-name">SNAP</div>
+                    <div class="program-box-desc" id="programBoxDesc1">Food & Nutrition Assistance</div>
+                </div>
+                <div class="program-box">
+                    <div class="program-box-name">Medicaid</div>
+                    <div class="program-box-desc" id="programBoxDesc2">Healthcare Benefits</div>
+                </div>
+                <div class="program-box">
+                    <div class="program-box-name">EITC</div>
+                    <div class="program-box-desc" id="programBoxDesc3">Earned Income Tax Credit</div>
+                </div>
+                <div class="program-box">
+                    <div class="program-box-name">LIHEAP</div>
+                    <div class="program-box-desc" id="programBoxDesc4">Energy & Heating Relief</div>
+                </div>
+                <div class="program-box">
+                    <div class="program-box-name">WIC</div>
+                    <div class="program-box-desc" id="programBoxDesc5">Mother & Child Nutrition</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Info Section -->
+        <div class="footer-info-section">
+            <div class="footer-info-left">
+                <div class="footer-logo">
+                    <div class="nav-logo-icon-wrapper">
+                        <svg class="nav-logo-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="m9 11 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="footer-logo-text">Citizen Benefits</span>
+                </div>
+                <p class="footer-info-desc" id="footerDesc">
+                    An independent, non-governmental intelligence system engineered to simplify pathfinding to eligible human resource networks in local structures. We run on privacy ideals.
+                </p>
+                <p class="footer-info-copyright" id="footerCopyrightSide">© 2026 Citizen Benefits. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-info-right">
+                <h3 class="advisories-header" id="advisoriesHeader">IMPORTANT SAFETY & SERVICE ADVISORIES</h3>
+                <div class="advisory-item">
+                    <p class="advisory-text">
+                        <strong id="govAffiliationTitle">Government Affiliation:</strong> 
+                        <span id="govAffiliationText">Citizen Benefits is a privately developed interface and platform. We do not represent, hold license from, or act on behalf of the Social Security Administration, Department of Agricultural Services, or federal department nodes.</span>
+                    </p>
+                </div>
+                <div class="advisory-item">
+                    <p class="advisory-text">
+                        <strong id="rulesContingencyTitle">Rules Change Contingency:</strong> 
+                        <span id="rulesContingencyText">Policy metrics are periodically recalculated. Estimates compiled here of potential qualify thresholds represent guidelines for reference only.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="appFooter">
+            <hr class="footer-divider">
+            <p class="footer-disclaimer" id="footerDisclaimer">
+                Disclaimer: This is an estimate, not a determination. Rules change. Only the official agency can decide.
+            </p>
+            <p class="footer-copyright" id="footerCopyright">&copy; 2026 Citizen Benefits. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Production JavaScript Bundle -->
+    <script src="/static/assets/js/styles.min.js?v=5.0"></script>
+</body>
+</html>

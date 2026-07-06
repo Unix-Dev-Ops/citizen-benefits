@@ -1,0 +1,50 @@
+[project]
+name = "citizenbenefits"
+version = "0.1.0"
+description = "US government-benefits eligibility navigator built with Google ADK Graph Workflow API."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk==2.3.0",
+    "google-genai==2.10.0",
+    "fastapi==0.139.0",
+    "uvicorn==0.34.0",
+    "pydantic==2.13.4",
+    "python-dotenv==1.0.1",
+    "beautifulsoup4==4.12.3",
+    "aiosqlite==0.22.1",
+]
+
+[project.optional-dependencies]
+eval = [
+    "google-cloud-aiplatform[evaluation]",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+    "pytest-asyncio==1.4.0",
+    "ruff==0.8.0",
+    "mypy==1.13.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/citizenbenefits"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B"]

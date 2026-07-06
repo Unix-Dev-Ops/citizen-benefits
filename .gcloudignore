@@ -1,0 +1,16 @@
+.gcloudignore
+.git
+.github
+.env
+.venv
+sessions.db
+tests
+logs
+progress.md
+.pytest_cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.db
+.sqlite

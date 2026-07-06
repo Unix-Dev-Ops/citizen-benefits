@@ -1,0 +1,345 @@
+{
+    "pageTitle": "Citizen Benefits: Navigateur gratuit d'éligibilité aux aides sociales US",
+    "metaDescription": "Vérifiez anonymement votre éligibilité aux aides SNAP, Medicaid, EITC, LIHEAP et WIC avec règles actuelles et liens officiels de demande.",
+    "spinnerTimerText": "Temps: {seconds}s",
+    "queryTimeText": "Temps de requête: {seconds}s",
+    "introText": "Bienvenue sur Citizen Benefits. Cet outil gratuit aide les particuliers a explorer les principaux programmes d'aide federaux tels que SNAP, Medicaid/CHIP, EITC, LIHEAP et WIC en fonction de la situation de leur foyer.",
+    "selectLanguageLabel": "Langue",
+    "selectCountryLabel": "Selectionner le pays",
+    "globalTitle": "Expansion a l'echelle mondiale",
+    "globalDesc": "Citizen Benefits se developpe a l'international. Le support pour {country} sera bientot disponible, couvrant {programs}. Inscrivez-vous pour etre notifie.",
+    "notifyInputPlaceholder": "Entrez votre adresse e-mail",
+    "btnNotify": "Me notifier",
+    "btnNotifyTitle": "Demander a etre notifie lorsque Citizen Benefits sera disponible dans votre pays.",
+    "globalWhyText": "Nous nous developperons prochainement pour soutenir d'autres pays afin que les familles du monde entier puissent acceder a des informations similaires pour leur pays d'origine.",
+    "globalComingSoon": "(Cette fonctionnalité sera bientôt disponible !)",
+    "labelStatus": "Citoyenneté",
+    "statusPlaceholder": "Sélectionnez votre statut",
+    "statusOptions": {
+        "us_citizen": "Citoyen americain",
+        "us_national": "Ressortissant americain",
+        "lawful_permanent_resident": "Resident permanent legal (LPR)",
+        "cofa_citizen": "Citoyen de la COFA",
+        "veteran_or_military": "Ancien combattant ou militaire d'active",
+        "other_not_listed": "Autre statut / Non-citoyen"
+    },
+    "labelState": "État",
+    "statePlaceholder": "Sélectionnez votre État",
+    "labelZip": "Code postal",
+    "labelHouseholdSize": "Taille du menage",
+    "labelIncomeBand": "Revenus Mensuels",
+    "incomeBandPlaceholder": "Sélectionnez votre niveau de revenus",
+    "incomeBandTitle": "Tranche de revenu mensuel total",
+    "incomeBandOptions": {
+        "under_50_fpl": "Moins de 50 % du seuil de pauvrete federal (FPL)",
+        "50_100_fpl": "50 % a 100 % du FPL",
+        "100_130_fpl": "100 % a 130 % du FPL",
+        "130_200_fpl": "130 % a 200 % du FPL",
+        "over_200_fpl": "Plus de 200 % du FPL"
+    },
+    "labelEarnedIncomeShare": "Revenus du Travail",
+    "earnedIncomeSharePlaceholder": "Sélectionnez la part des revenus du travail",
+    "earnedIncomeShareTitle": "Part des revenus issus du travail (salaires)",
+    "earnedIncomeShareOptions": {
+        "none": "Aucun (tous revenus non salariaux)",
+        "some": "Un peu (moins de la moitie)",
+        "most": "La part des revenus issus du travail (salaires)",
+        "all": "Tous (100 % revenus issus du travail)"
+    },
+    "labelAgeBand": "Groupe d'Âge",
+    "ageBandPlaceholder": "Sélectionnez votre tranche d'âge",
+    "ageBandOptions": {
+        "under_18": "Enfant/Jeune, de moins de 18 ans",
+        "18_59": "Adulte, de 18 a 59 ans",
+        "60_64": "Adulte plus age, de 60 a 64 ans",
+        "65_plus": "Personne agee, 65 ans et plus"
+    },
+    "labelNumChildren": "Enfants",
+    "labelCircumstances": "Circonstances",
+    "spanDisability": "Membre presentant un handicap",
+    "spanPregnant": "Membre enceinte",
+    "spanMarried": "Marie declaration commune",
+    "spanVeteran": "Statut d'ancien combattant ou militaire",
+    "btnSubmitText": "Analyser les programmes potentiels",
+    "btnSubmitTitle": "Analysez les informations de votre foyer pour estimer l'eligibilite aux prestations.",
+    "badgeNoSignup": "Aucune inscription requise",
+    "badgeDataPrivacy": "Données jamais stockées ou partagées",
+    "spinnerText": "Analyse des criteres d'eligibilite en cours...",
+    "formNote": "<span class=\"form-note-bold\">Comment ça marche :</span> Partagez quelques details anonymes sur votre foyer. Recevez une estimation simple des programmes auxquels vous pouvez pretendre. Obtenez des liens directs vers les ressources de candidature officielles de votre Etat.<span class=\"form-note-center\">Il ne s'agit que d'une estimation, basee sur les regles en vigueur. Seule l'organisme officiel prend la decision finale sur l'eligibilite.</span>",
+    "whyTitle": "Notre Mission",
+    "whyText": "Les programmes federaux peuvent etre difficiles a naviguer, en particulier avec les mises a jour recentes. Nous simplifions le processus avec des explications claires et des liens directs vers les sites officiels afin que vous puissiez trouver le soutien correspondant a vos besoins. L'outil garde tout prive. Aucun detail personnel n'est collecte ou stocke.",
+    "updatedPillText": "MIS À JOUR POUR LES NIVEAUX D'ÉLIGIBILITÉ DE L'ANNÉE FISCALE 2026",
+    "whyCardTitle1": "Navigation Structurée",
+    "whyCardDesc1": "Fini le défilement infini des forums gouvernementaux confus. Nous unifions les exigences cruciales dans des interfaces de décision simplifiées.",
+    "whyCardTitle2": "Entièrement Chiffré",
+    "whyCardDesc2": "La confidentialité n'est pas une simple fonctionnalité ; c'est notre moteur. Aucune entrée n'est envoyée à des serveurs distants ou conservée dans des cookies analytiques.",
+    "whyCardTitle3": "Accès Direct aux Portails",
+    "whyCardDesc3": "Évitez l'encombrement des moteurs de recherche. Recevez des liens profonds instantanés et authentiques menant directement vers les portails gérés par l'État.",
+    "programsSectionTitle": "PROGRAMMES PRIS EN CHARGE SURVEILLÉS",
+    "programBoxDesc1": "Aide Alimentaire et Nutritionnelle",
+    "programBoxDesc2": "Prestations de Soins de Santé",
+    "programBoxDesc3": "Crédit d'Impôt sur le Revenu Gagné",
+    "programBoxDesc4": "Aide à l'Énergie et au Chauffage",
+    "programBoxDesc5": "Nutrition Mère et Enfant",
+    "footerDesc": "Un système d'intelligence indépendant et non gouvernemental conçu pour simplifier la recherche de voies vers les réseaux de ressources humaines éligibles dans les structures locales. Nous fonctionnons selon des idéaux de confidentialité.",
+    "advisoriesHeader": "AVIS D'INFORMATION ET DE SÉCURITÉ IMPORTANTS",
+    "govAffiliationTitle": "Affiliation Gouvernementale",
+    "govAffiliationText": "Citizen Benefits est une interface et une plateforme développées à titre privé. Nous ne représentons pas, ne détenons pas de licence de, ou n'agissons pas au nom de la Social Security Administration, du Department of Agricultural Services, ou des nœuds des départements fédéraux.",
+    "rulesContingencyTitle": "Contingence de Changement de Règles",
+    "rulesContingencyText": "Les mesures politiques sont périodiquement recalculées. Les estimations compilées ici des seuils de qualification potentiels représentent des lignes directrices à titre de référence uniquement.",
+    "intakeTitle": "Outil de Qualification d'Éligibilité",
+    "intakeSubtitle": "Remplissez les variables ci-dessous pour vérifier votre situation initiale.",
+    "intakeBadgeText": "Contrôle Anonyme",
+    "navHowItWorks": "Notre Mission",
+    "navSupportedPrograms": "Programmes pris en charge",
+    "navPrivacyPrinciples": "Principes de confidentialité",
+    "titleNavMission": "Pourquoi nous avons créé ce navigateur de prestations anonyme",
+    "titleNavPrograms": "Programmes d'aide fédéraux : SNAP, Medicaid, EITC et plus",
+    "titleNavPrivacy": "Nous ne collectons aucune information personnelle - votre vie privée est protégée",
+    "titleNavLogo": "Citizen Benefits - Navigateur anonyme d'éligibilité aux prestations",
+    "heroTitle": "Découvrez le soutien que vous <br><span class=\"gradient-text\">avez déjà mérité.</span>",
+    "featureTitle1": "100% Anonyme",
+    "featureDesc1": "Aucun nom, adresse e-mail ou numéro de sécurité sociale n'est requis.",
+    "featureTitle2": "Estimation instantanée",
+    "featureDesc2": "Calculs en temps réel sur plusieurs programmes fédéraux.",
+    "featureTitle3": "Localisé par État",
+    "featureDesc3": "Correspond aux directives de revenus actuelles basées sur votre géographie.",
+    "featureTitle4": "Connexion directe",
+    "featureDesc4": "Destinations de candidature de l'agence officielle disponibles instantanément.",
+    "resultsHeader": "Vos estimations d'eligibilite",
+    "footerDisclaimer": "Avis : Il s'agit d'une estimation, pas d'une decision finale. Les regles changent. Seul l'organisme officiel peut decider de votre eligibilite.",
+    "footerCopyright": "© 2026 Citizen Benefits. Tous droits reserves.",
+    "titleCountrySelect": "Selectionnez votre pays de residence",
+    "titleLangSelect": "Selectionnez votre langue preferee",
+    "titleStatusSelect": "Selectionnez votre citoyennete ou statut d'immigration admissible",
+    "titleStateInput": "Selectionnez l'Etat ou le territoire des Etats-Unis ou vous residez actuellement. Les regles de l'Etat determinent les limites d'eligibilite specifiques, les niveaux d'aide aux services publics et les dispositions de candidature localisees pour les programmes SNAP, Medicaid et LIHEAP.",
+    "titleZipInput": "Fournissez votre code postal local a cinq chiffres. Les codes postaux correspondent aux limites des comtes, aux fournisseurs de services locaux et aux zones climatiques regionales utilisees pour calculer l'aide aux services publics dans le cadre des programmes energetiques.",
+    "titleHouseholdSizeInput": "Saisissez le nombre total de personnes qui vivent avec vous et qui achetent/preparent leurs repas ensemble. Une taille de menage plus elevee augmente le seuil limite de revenus federal correspondant (Federal Poverty Level).",
+    "titleIncomeBandSelect": "Selectionnez la tranche de revenu mensuel brut de votre foyer par rapport aux directives federales sur la pauvrete. Cela determine les seuils d'eligibilite de base pour SNAP (generalement moins de 130-200% FPL) et Medicaid (generalement moins de 138% FPL).",
+    "titleEarnedIncomeShareSelect": "Precisez la part de vos revenus provenant de salaires ou d'un travail independant par rapport aux pensions, allocations ou pensions alimentaires. Certains programmes exigent des revenus d'activite, tandis que d'autres appliquent des deductions specifiques.",
+    "titleAgeBandSelect": "Choisissez votre groupe d'age actuel. Les personnes agees (60 ans et plus) et les enfants (moins de 18 ans) beneficient de deductions standards plus elevees, de regles de declaration simplifiees ou de programmes specifiques comme le WIC.",
+    "titleNumChildrenSelect": "Saisissez le nombre d'enfants de moins de 18 ans vivant dans votre foyer. La presence d'enfants eligibles est une condition principale pour l'Earned Income Tax Credit (EITC) et les prestations de nutrition WIC.",
+    "titleCircumstanceDisability": "Cochez si un membre de votre foyer utilise un fauteuil roulant ou declare un handicap documente",
+    "titleCircumstancePregnant": "Cochez si un membre de votre foyer est actuellement enceinte",
+    "titleCircumstanceMarried": "Cochez si vous etes marie et declarez vos revenus conjointement",
+    "titleCircumstanceVeteran": "Cochez si un membre de votre foyer est un ancien combattant ou un militaire d'active",
+    "titleBtnApply": "Postulez directement sur le site officiel de l'organisme d'Etat.",
+    "titleBtnApply_SNAP": "Postulez directement sur le site officiel de l'organisme d'Etat pour les prestations SNAP.",
+    "titleBtnApply_MEDICAID_CHIP": "Postulez directement sur le site officiel de l'organisme d'Etat pour les prestations Medicaid et CHIP.",
+    "titleBtnApply_EITC": "Accedez aux tableaux et instructions EITC directement sur le site officiel de l'IRS.",
+    "titleBtnApply_LIHEAP": "Postulez directement sur le site officiel de l'organisme d'Etat pour l'aide a l'energie (LIHEAP).",
+    "titleBtnApply_WIC": "Postulez directement sur le site officiel de l'organisme d'Etat pour l'aide nutritionnelle WIC.",
+    "statusPopupTitle": "Requisitions de Citoyenneté",
+    "statusPopupBody": "Conformement aux reglementations federales, la citoyennete ou un statut d'immigration admissible est la condition prealable a l'admissibilite aux programmes. Les statuts pris en charge comprennent : citoyen americain, ressortissant americain, resident permanent legal, citoyen de la COFA et ancien combattant ou militaire d'active. D'autres categories de non-citoyens sont generalement sujettes a un delai d'attente de cinq ans.",
+    "hintState": "Votre Etat fixe les limites du programme et l'endroit ou vous postulez",
+    "hintZip": "Utilise pour les programmes locaux et l'aide a l'energie",
+    "hintHouseholdSize": "Personnes qui vivent et achetent ou preparent des repas ensemble",
+    "hintIncomeBand": "Revenu mensuel brut par rapport au seuil de pauvrete",
+    "hintEarnedIncomeShare": "Part des revenus provenant de salaires ou d'un travail independant",
+    "hintAgeBand": "L'age influe sur les deductions et les regles du programme",
+    "hintNumChildren": "Enfants de moins de 18 ans dans votre foyer",
+    "badge_likely": "PROBABLE",
+    "badge_possibly": "POSSIBLE",
+    "badge_unlikely": "IMPROBABLE",
+    "badge_not_available_for_status": "NON DISPONIBLE POUR LE STATUT",
+    "labelSource": "Source",
+    "labelOfficialPortal": "Portail Officiel de l'État",
+    "reasonTranslations": [
+        {
+            "pattern": "Ineligibility Scope: This program's federal coverage is limited by law to qualifying citizenship and immigration statuses\\.",
+            "replacement": "Portee de l'inadmissibilite : La couverture federale de ce programme est limitee par la loi aux statuts de citoyennete et d'immigration admissibles."
+        },
+        {
+            "pattern": "Verification Required: SNAP grounding rules could not be fully retrieved from USDA/FNS\\.",
+            "replacement": "Verification requise : Les regles de base de SNAP n'ont pas pu etre entierement recuperees aupres de l'USDA/FNS."
+        },
+        {
+            "pattern": "Verification Required: Medicaid grounding rules could not be fully retrieved from Medicaid\\.gov\\.",
+            "replacement": "Verification requise : Les regles de base de Medicaid n'ont pas pu etre entierement recuperees aupres de Medicaid.gov."
+        },
+        {
+            "pattern": "Verification Required: EITC grounding rules could not be fully retrieved from the IRS\\.",
+            "replacement": "Verification requise : Les regles de base de l'EITC n'ont pas pu etre entierement recuperees aupres de l'IRS."
+        },
+        {
+            "pattern": "Verification Required: EITC single filing limits could not be retrieved\\.",
+            "replacement": "Verification requise : Les limites de declaration de celibataire de l'EITC n'ont pas pu etre recuperees."
+        },
+        {
+            "pattern": "Verification Required: EITC married filing limits could not be retrieved\\.",
+            "replacement": "Verification requise : Les limites de declaration conjointe de l'EITC n'ont pas pu etre recuperees."
+        },
+        {
+            "pattern": "Verification Required: LIHEAP grounding rules could not be fully retrieved from HHS\\.",
+            "replacement": "Verification requise : Les regles de base de LIHEAP n'ont pas pu etre entierement recuperees aupres du HHS."
+        },
+        {
+            "pattern": "Verification Required: WIC grounding rules could not be fully retrieved from USDA/FNS WIC\\.",
+            "replacement": "Verification requise : Les regles de base du WIC n'ont pas pu etre entierement recuperees aupres de l'USDA/FNS WIC."
+        },
+        {
+            "pattern": "Based on the most recent verified rules; live verification was not available\\. Please confirm with the official agency\\.",
+            "replacement": "Sur la base des regles verifiees les plus recentes ; la verification en direct n'etait pas disponible. Veuillez confirmer aupres de l'organisme officiel."
+        },
+        {
+            "pattern": "Gross income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources brutes : completement en dessous ou au niveau de la limite de $1%."
+        },
+        {
+            "pattern": "Gross income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources brutes : completement au-dessus de la limite de $1%."
+        },
+        {
+            "pattern": "Gross income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources brutes : la tranche de revenu chevauche la limite de $1%."
+        },
+        {
+            "pattern": "Elderly or disabled household: gross income requirement waived\\.",
+            "replacement": "Foyer avec personnes agees ou handicapees : dispense de la condition de ressources brutes."
+        },
+        {
+            "pattern": "Net income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources nettes : completement en dessous ou au niveau de la limite de $1%."
+        },
+        {
+            "pattern": "Net income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources nettes : completement au-dessus de la limite de $1%."
+        },
+        {
+            "pattern": "Net income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources nettes : la tranche de revenu chevauche la limite de $1%."
+        },
+        {
+            "pattern": "Income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources : completement en dessous ou au niveau de la limite de $1%."
+        },
+        {
+            "pattern": "Income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources : completement au-dessus de la limite de $1%."
+        },
+        {
+            "pattern": "Income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Condition de ressources : la tranche de revenu chevauche la limite de $1%."
+        },
+        {
+            "pattern": "Income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%",
+            "replacement": "Condition de ressources : completement en dessous ou au niveau de la limite de $1%"
+        },
+        {
+            "pattern": "Income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%",
+            "replacement": "Condition de ressources : completement au-dessus de la limite de $1%"
+        },
+        {
+            "pattern": "Income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%",
+            "replacement": "Condition de ressources : la tranche de revenu chevauche la limite de $1%"
+        },
+        {
+            "pattern": "Subject to resource requirement of \\$([\\d\\.]+)\\.",
+            "replacement": "Soumis a une condition de ressources de $1."
+        },
+        {
+            "pattern": "OBBBA Work Requirements: Individuals aged 60-64 are subject to the 80-hour monthly work requirement \\(ABAWD\\) unless exempt\\.",
+            "replacement": "Conditions de travail OBBBA : Les personnes agees de 60 a 64 ans sont soumises a l'obligation de travail mensuelle de 80 heures (ABAWD) sauf dispense."
+        },
+        {
+            "pattern": "Work Requirements: Subject to standard SNAP work requirements unless exempt\\.",
+            "replacement": "Conditions de travail : Soumis aux conditions de travail standard de SNAP sauf dispense."
+        },
+        {
+            "pattern": "Exempt from SNAP work requirements \\(age 65\\+\\)\\.",
+            "replacement": "Exempte des conditions de travail de SNAP (65 ans et plus)."
+        },
+        {
+            "pattern": "Note: As of Feb 1 2026, veterans are no longer automatically exempt from SNAP work requirements\\.",
+            "replacement": "Note : A compter du 1er fevrier 2026, les anciens combattants ne sont plus automatiquement exemptes des conditions de travail de SNAP."
+        },
+        {
+            "pattern": "LPR wait period waived due to age, disability, or military/veteran status\\.",
+            "replacement": "Delai d'attente LPR annule en raison de l'age, d'un handicap ou du statut militaire/d'ancien combattant."
+        },
+        {
+            "pattern": "Subject to the standard (\\d+)-year waiting period for LPR status\\.",
+            "replacement": "Soumis au delai d'attente standard de $1 ans pour le statut LPR."
+        },
+        {
+            "pattern": "Pregnancy category: expanded income limits apply\\.",
+            "replacement": "Categorie grossesse : des limites de revenus élargies s'appliquent."
+        },
+        {
+            "pattern": "Child/Family category: expanded income limits apply\\.",
+            "replacement": "Categorie enfant/famille : des limites de revenus élargies s'appliquent."
+        },
+        {
+            "pattern": "Aged or disabled category: non-MAGI rules and asset requirement limit of \\$([\\d\\.]+) apply\\.",
+            "replacement": "Categorie personne agee ou handicapee : les regles non-MAGI et une limite de ressources de $1 s'appliquent."
+        },
+        {
+            "pattern": "Standard adult category\\.",
+            "replacement": "Categorie adulte standard."
+        },
+        {
+            "pattern": "OBBBA Work Requirements: Individuals aged 60-64 are subject to state Medicaid work requirements if applicable in the state\\.",
+            "replacement": "Conditions de travail OBBBA : Les personnes agees de 60 a 64 ans sont soumises aux conditions de travail de Medicaid de l'Etat si elles s'appliquent."
+        },
+        {
+            "pattern": "LPR wait period waived due to categorical status or military connection\\.",
+            "replacement": "Delai d'attente LPR annule en raison du statut categoriel ou d'une affiliation militaire."
+        },
+        {
+            "pattern": "Investment income was not evaluated; the IRS investment income limit also applies\\.",
+            "replacement": "Les revenus de placement n'ont pas ete evalues ; la limite des revenus de placement de l'IRS s'applique egalement."
+        },
+        {
+            "pattern": "Requires earned income to qualify\\.",
+            "replacement": "Necessite des revenus du travail pour etre admissible."
+        },
+        {
+            "pattern": "Married filing jointly filing status\\.",
+            "replacement": "Statut de declaration conjointe pour les personnes mariees."
+        },
+        {
+            "pattern": "Single or Head of Household filing status\\.",
+            "replacement": "Statut de declaration individuelle ou chef de famille."
+        },
+        {
+            "pattern": "Ineligible: Childless EITC is limited to ages (\\d+) to (\\d+)\\.",
+            "replacement": "Inadmissible : L'EITC sans enfant est limite aux personnes agees de $1 a $2 ans."
+        },
+        {
+            "pattern": "Age requirement: Age 18 is below childless minimum age of (\\d+)\\. Verification required\\.",
+            "replacement": "Condition d'age : L'age de 18 ans est inferieur a l'age minimal de $1 ans sans enfant. Verification requise."
+        },
+        {
+            "pattern": "Age requirement: Age meets childless range of (\\d+)-(\\d+)\\.",
+            "replacement": "Condition d'age : L'age correspond a la tranche de $1-$2 ans sans enfant."
+        },
+        {
+            "pattern": "Categorical requirement: meets requirement due to pregnancy\\.",
+            "replacement": "Condition categorielle : repond aux exigences en raison de la grossesse."
+        },
+        {
+            "pattern": "Categorical requirement: meets requirement as an individual under 18\\.",
+            "replacement": "Condition categorielle : repond aux exigences en tant qu'individu de moins de 18 ans."
+        },
+        {
+            "pattern": "Categorical requirement: presence of children meets requirement, but the schema cannot distinguish children under 5 from under 18\\. WIC applies to pregnant or postpartum individuals, infants, and children under age 5\\.",
+            "replacement": "Condition categorielle : la presence d'enfants repond aux exigences, mais le systeme ne peut pas distinguer les enfants de moins de 5 ans de ceux de moins de 18 ans. Le WIC s'applique aux personnes enceintes ou en post-partum, aux nourrissons et aux enfants de moins de 5 ans."
+        },
+        {
+            "pattern": "Categorical requirement failed: WIC requires a pregnant individual, infant, or child under 5\\.",
+            "replacement": "Condition categorielle non remplie : Le WIC necessite une personne enceinte, un nourrisson ou un enfant de moins de 5 ans."
+        },
+        {
+            "pattern": "Invalid request format\\. Please submit the eligibility factors in the expected structured format\\. No personal details are needed\\.",
+            "replacement": "Format de demande non valide. Veuillez soumettre les facteurs d'admissibilite dans le format structure attendu. Aucun detail personnel n'est requis."
+        },
+        {
+            "pattern": "WARNING: Request rejected\\. Please do not share sensitive personal identifying information \\(PII\\) such as names, Social Security Numbers, addresses, or dates of birth\\.",
+            "replacement": "AVERTISSEMENT : Demande rejetee. Veuillez ne pas partager d'informations d'identification personnelles sensibles (PII) telles que les noms, les numeros de securite sociale, les adresses ou les dates de naissance."
+        },
+        {
+            "pattern": "WARNING: Safety check could not complete\\. Please retry your request without including any personal details, names, addresses, or identifiers\\.",
+            "replacement": "AVERTISSEMENT : La verification de securite n'a pas pu se terminer. Veuillez reessayer votre demande sans inclure de details personnels, de noms, d'adresses ou d'identifiants."
+        }
+    ]
+}

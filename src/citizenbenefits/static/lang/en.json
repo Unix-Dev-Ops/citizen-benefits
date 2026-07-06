@@ -1,0 +1,345 @@
+{
+    "pageTitle": "Citizen Benefits: Free US Benefits Eligibility Navigator",
+    "metaDescription": "Free, anonymous eligibility checks for SNAP, Medicaid/CHIP, EITC, LIHEAP, and WIC. Grounded in current law, with official application links.",
+    "spinnerTimerText": "Time: {seconds}s",
+    "queryTimeText": "Query Time: {seconds}s",
+    "introText": "Welcome to Citizen Benefits. This free tool helps individuals explore major federal assistance programs like SNAP, Medicaid/CHIP, EITC, LIHEAP, and WIC based on their household situation.",
+    "selectLanguageLabel": "Language",
+    "selectCountryLabel": "Select Country",
+    "globalTitle": "Expanding Globally",
+    "globalDesc": "Citizen Benefits is expanding globally. Support for {country} is coming soon, covering {programs}. Sign up to be notified.",
+    "notifyInputPlaceholder": "Enter your email address",
+    "btnNotify": "Notify Me",
+    "btnNotifyTitle": "Request to be notified when Citizen Benefits becomes available in your country.",
+    "globalWhyText": "We are expanding soon to support additional countries so families everywhere can access similar information for their home nations.",
+    "globalComingSoon": "(This functionality is coming soon!)",
+    "labelStatus": "Citizenship",
+    "statusPlaceholder": "Select your status",
+    "statusOptions": {
+        "us_citizen": "US Citizen",
+        "us_national": "US National",
+        "lawful_permanent_resident": "Lawful Permanent Resident (LPR)",
+        "cofa_citizen": "COFA Citizen",
+        "veteran_or_military": "Veteran or Active Duty Military",
+        "other_not_listed": "Other Status / Non-Citizen"
+    },
+    "labelState": "State",
+    "statePlaceholder": "Select your state",
+    "labelZip": "ZIP Code",
+    "labelHouseholdSize": "Household Size",
+    "labelIncomeBand": "Monthly Income",
+    "incomeBandPlaceholder": "Select your income level",
+    "incomeBandTitle": "Total Monthly Gross Income Band",
+    "incomeBandOptions": {
+        "under_50_fpl": "Under 50% of Federal Poverty Level (FPL)",
+        "50_100_fpl": "50% to 100% of FPL",
+        "100_130_fpl": "100% to 130% of FPL",
+        "130_200_fpl": "130% to 200% of FPL",
+        "over_200_fpl": "Over 200% of FPL"
+    },
+    "labelEarnedIncomeShare": "Earned Income",
+    "earnedIncomeSharePlaceholder": "Select earned income share",
+    "earnedIncomeShareTitle": "Share of income that comes from wages or self-employment",
+    "earnedIncomeShareOptions": {
+        "none": "None (all unearned income)",
+        "some": "Some (less than half)",
+        "most": "Most (more than half)",
+        "all": "All (100% earned income)"
+    },
+    "labelAgeBand": "Age Group",
+    "ageBandPlaceholder": "Select your age bracket",
+    "ageBandOptions": {
+        "under_18": "Child/Youth, Under 18",
+        "18_59": "Adult, Ages 18-59",
+        "60_64": "Older Adult, Ages 60-64",
+        "65_plus": "Elderly, Age 65+"
+    },
+    "labelNumChildren": "Children",
+    "labelCircumstances": "Circumstances",
+    "spanDisability": "Member with Disability",
+    "spanPregnant": "Member is Pregnant",
+    "spanMarried": "Married Filing Jointly",
+    "spanVeteran": "Veteran or Military Status",
+    "btnSubmitText": "Analyze Potential Programs",
+    "btnSubmitTitle": "Analyze your household information to estimate eligibility for benefits.",
+    "badgeNoSignup": "No sign-ups required",
+    "badgeDataPrivacy": "Data never stored or shared",
+    "spinnerText": "Analyzing eligibility criteria...",
+    "formNote": "<span class=\"form-note-bold\">How it works:</span> Share a few anonymous details about your household. Receive a straightforward estimate of programs you may qualify for. Get direct links to official application resources in your state.<span class=\"form-note-center\">This is an estimate only, based on current rules. Only the government agency makes the final decision on eligibility.</span>",
+    "whyTitle": "Our Mission",
+    "whyText": "Federal programs can be hard to navigate, especially with recent updates. We simplify the process with clear explanations and links straight to official sites so you can find the support that fits your needs. The tool keeps everything private. No personal details are collected or stored.",
+    "updatedPillText": "UPDATED FOR FISCAL YEAR 2026 ELIGIBILITY LEVELS",
+    "whyCardTitle1": "Structured Navigation",
+    "whyCardDesc1": "No more endless scrolling of confusing government forums. We unify critical requirements into simplified decision interfaces.",
+    "whyCardTitle2": "Completely Encrypted",
+    "whyCardDesc2": "Privacy isn't a feature; it's our engine. Zero inputs are sent to remote servers or kept on analytical cookies.",
+    "whyCardTitle3": "Direct Gateway Access",
+    "whyCardDesc3": "Skip search engine clutter. Receive instant, authentic deep links mapping directly inside state run portals.",
+    "programsSectionTitle": "SUPPORTED PROGRAMS MONITORED",
+    "programBoxDesc1": "Food & Nutrition Assistance",
+    "programBoxDesc2": "Healthcare Benefits",
+    "programBoxDesc3": "Earned Income Tax Credit",
+    "programBoxDesc4": "Energy & Heating Relief",
+    "programBoxDesc5": "Mother & Child Nutrition",
+    "footerDesc": "An independent, non-governmental intelligence system engineered to simplify pathfinding to eligible human resource networks in local structures. We run on privacy ideals.",
+    "advisoriesHeader": "IMPORTANT SAFETY & SERVICE ADVISORIES",
+    "govAffiliationTitle": "Government Affiliation",
+    "govAffiliationText": "Citizen Benefits is a privately developed interface and platform. We do not represent, hold license from, or act on behalf of the Social Security Administration, Department of Agricultural Services, or federal department nodes.",
+    "rulesContingencyTitle": "Rules Change Contingency",
+    "rulesContingencyText": "Policy metrics are periodically recalculated. Estimates compiled here of potential qualify thresholds represent guidelines for reference only.",
+    "intakeTitle": "Eligibility Qualifier Tool",
+    "intakeSubtitle": "Fill out the variables below to check your initial standing.",
+    "intakeBadgeText": "Anonymous Check",
+    "navHowItWorks": "Our Mission",
+    "navSupportedPrograms": "Supported Programs",
+    "navPrivacyPrinciples": "Privacy Principles",
+    "titleNavMission": "Why we built this anonymous benefits navigator",
+    "titleNavPrograms": "Federal assistance programs: SNAP, Medicaid, EITC & more",
+    "titleNavPrivacy": "We collect no personal information - your privacy is protected",
+    "titleNavLogo": "Citizen Benefits - Anonymous Benefits Eligibility Navigator",
+    "heroTitle": "Discover the support you've <br><span class=\"gradient-text\">already earned.</span>",
+    "featureTitle1": "100% Anonymous",
+    "featureDesc1": "No names, emails, or Social Security numbers are required.",
+    "featureTitle2": "Instant Estimate",
+    "featureDesc2": "Real-time calculations across multiple federal programs.",
+    "featureTitle3": "State-Localized",
+    "featureDesc3": "Matches current income guidelines based on your geography.",
+    "featureTitle4": "Direct Connect",
+    "featureDesc4": "Official agency application destinations available instantly.",
+    "resultsHeader": "Your Eligibility Estimates",
+    "footerDisclaimer": "Disclaimer: This is an estimate, not a determination. Rules change. Only the official agency can decide.",
+    "footerCopyright": "© 2026 Citizen Benefits. All rights reserved.",
+    "titleCountrySelect": "Select your country of residence",
+    "titleLangSelect": "Select your preferred language",
+    "titleStatusSelect": "Select your citizenship or qualifying immigration status",
+    "titleStateInput": "Select the US state or territory where you currently reside. State rules determine specific eligibility limits, utility assistance tiers, and localized application processes for SNAP, Medicaid, and LIHEAP programs.",
+    "titleZipInput": "Provide your local five-digit ZIP code. ZIP codes map to county boundaries, local service providers, and regional climate zones used to calculate utility assistance under energy programs.",
+    "titleHouseholdSizeInput": "Enter the total count of individuals who live with you and purchase/prepare food together. A larger household size increases the corresponding Federal Poverty Level income threshold limit.",
+    "titleIncomeBandSelect": "Select your total gross monthly household income band compared to the Federal Poverty Guidelines. This determines basic qualification thresholds for SNAP (typically under 130-200% FPL) and Medicaid (typically under 138% FPL).",
+    "titleEarnedIncomeShareSelect": "Specify the portion of your income that comes from wages, salaries, or self-employment rather than pensions, SSI, or child support. Programs like EITC require earned income, while SNAP applies a 20% deduction on earned wages.",
+    "titleAgeBandSelect": "Choose your current age group. Elderly individuals (ages 60+) and children (under 18) qualify for higher standard deductions, simplified reporting rules, or age-based assistance programs like WIC.",
+    "titleNumChildrenSelect": "Enter the number of children under age 18 living in your household. Having qualifying children is a primary requirement for the Earned Income Tax Credit (EITC) and WIC nutrition benefits.",
+    "titleCircumstanceDisability": "Check if any member of your household has a documented disability",
+    "titleCircumstancePregnant": "Check if any member of your household is currently pregnant",
+    "titleCircumstanceMarried": "Check if you are married and filing taxes jointly",
+    "titleCircumstanceVeteran": "Check if any member of your household is a veteran or active duty military",
+    "titleBtnApply": "Apply directly on the official State agency website.",
+    "titleBtnApply_SNAP": "Apply directly on the official State agency website for SNAP benefits.",
+    "titleBtnApply_MEDICAID_CHIP": "Apply directly on the official State agency website for Medicaid and CHIP benefits.",
+    "titleBtnApply_EITC": "Access EITC tables and instructions directly on the official IRS website.",
+    "titleBtnApply_LIHEAP": "Apply directly on the official State agency website for energy assistance (LIHEAP).",
+    "titleBtnApply_WIC": "Apply directly on the official State agency website for WIC nutrition assistance.",
+    "statusPopupTitle": "Citizenship Requirements",
+    "statusPopupBody": "Under federal regulations, citizenship or qualifying immigration status is the initial requirement for program eligibility. Qualifying statuses include US Citizen, US National, Lawful Permanent Resident, COFA Citizen, and Veteran or Active Duty Military. Other non-citizen categories are generally subject to a five-year waiting period for certain programs.",
+    "hintState": "Your state sets program limits and where you apply",
+    "hintZip": "Used for local programs and energy assistance",
+    "hintHouseholdSize": "People who live and buy or prepare food together",
+    "hintIncomeBand": "Gross monthly income compared to the poverty level",
+    "hintEarnedIncomeShare": "Portion of income from wages or self-employment",
+    "hintAgeBand": "Age affects deductions and program rules",
+    "hintNumChildren": "Children under 18 in your household",
+    "badge_likely": "LIKELY",
+    "badge_possibly": "POSSIBLY",
+    "badge_unlikely": "UNLIKELY",
+    "badge_not_available_for_status": "NOT AVAILABLE FOR STATUS",
+    "labelSource": "Source",
+    "labelOfficialPortal": "Official State Portal",
+    "reasonTranslations": [
+        {
+            "pattern": "Ineligibility Scope: This program's federal coverage is limited by law to qualifying citizenship and immigration statuses\\.",
+            "replacement": "Ineligibility Scope: This program's federal coverage is limited by law to qualifying citizenship and immigration statuses."
+        },
+        {
+            "pattern": "Verification Required: SNAP grounding rules could not be fully retrieved from USDA/FNS\\.",
+            "replacement": "Verification Required: SNAP grounding rules could not be fully retrieved from USDA/FNS."
+        },
+        {
+            "pattern": "Verification Required: Medicaid grounding rules could not be fully retrieved from Medicaid\\.gov\\.",
+            "replacement": "Verification Required: Medicaid grounding rules could not be fully retrieved from Medicaid.gov."
+        },
+        {
+            "pattern": "Verification Required: EITC grounding rules could not be fully retrieved from the IRS\\.",
+            "replacement": "Verification Required: EITC grounding rules could not be fully retrieved from the IRS."
+        },
+        {
+            "pattern": "Verification Required: EITC single filing limits could not be retrieved\\.",
+            "replacement": "Verification Required: EITC single filing limits could not be retrieved."
+        },
+        {
+            "pattern": "Verification Required: EITC married filing limits could not be retrieved\\.",
+            "replacement": "Verification Required: EITC married filing limits could not be retrieved."
+        },
+        {
+            "pattern": "Verification Required: LIHEAP grounding rules could not be fully retrieved from HHS\\.",
+            "replacement": "Verification Required: LIHEAP grounding rules could not be fully retrieved from HHS."
+        },
+        {
+            "pattern": "Verification Required: WIC grounding rules could not be fully retrieved from USDA/FNS WIC\\.",
+            "replacement": "Verification Required: WIC grounding rules could not be fully retrieved from USDA/FNS WIC."
+        },
+        {
+            "pattern": "Based on the most recent verified rules; live verification was not available\\. Please confirm with the official agency\\.",
+            "replacement": "Based on the most recent verified rules; live verification was not available. Please confirm with the official agency."
+        },
+        {
+            "pattern": "Gross income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Gross income requirement: completely below/at limit of $1%."
+        },
+        {
+            "pattern": "Gross income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Gross income requirement: completely above limit of $1%."
+        },
+        {
+            "pattern": "Gross income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Gross income requirement: income band straddles the limit of $1%."
+        },
+        {
+            "pattern": "Elderly or disabled household: gross income requirement waived\\.",
+            "replacement": "Elderly or disabled household: gross income requirement waived."
+        },
+        {
+            "pattern": "Net income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Net income requirement: completely below/at limit of $1%."
+        },
+        {
+            "pattern": "Net income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Net income requirement: completely above limit of $1%."
+        },
+        {
+            "pattern": "Net income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Net income requirement: income band straddles the limit of $1%."
+        },
+        {
+            "pattern": "Income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Income requirement: completely below/at limit of $1%."
+        },
+        {
+            "pattern": "Income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Income requirement: completely above limit of $1%."
+        },
+        {
+            "pattern": "Income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
+            "replacement": "Income requirement: income band straddles the limit of $1%."
+        },
+        {
+            "pattern": "Income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%",
+            "replacement": "Income requirement: completely below/at limit of $1%"
+        },
+        {
+            "pattern": "Income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%",
+            "replacement": "Income requirement: completely above limit of $1%"
+        },
+        {
+            "pattern": "Income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%",
+            "replacement": "Income requirement: income band straddles the limit of $1%"
+        },
+        {
+            "pattern": "Subject to resource requirement of \\$([\\d\\.]+)\\.",
+            "replacement": "Subject to resource requirement of $1."
+        },
+        {
+            "pattern": "OBBBA Work Requirements: Individuals aged 60-64 are subject to the 80-hour monthly work requirement \\(ABAWD\\) unless exempt\\.",
+            "replacement": "OBBBA Work Requirements: Individuals aged 60-64 are subject to the 80-hour monthly work requirement (ABAWD) unless exempt."
+        },
+        {
+            "pattern": "Work Requirements: Subject to standard SNAP work requirements unless exempt\\.",
+            "replacement": "Work Requirements: Subject to standard SNAP work requirements unless exempt."
+        },
+        {
+            "pattern": "Exempt from SNAP work requirements \\(age 65\\+\\)\\.",
+            "replacement": "Exempt from SNAP work requirements (age 65+)."
+        },
+        {
+            "pattern": "Note: As of Feb 1 2026, veterans are no longer automatically exempt from SNAP work requirements\\.",
+            "replacement": "Note: As of Feb 1 2026, veterans are no longer automatically exempt from SNAP work requirements."
+        },
+        {
+            "pattern": "LPR wait period waived due to age, disability, or military/veteran status\\.",
+            "replacement": "LPR wait period waived due to age, disability, or military/veteran status."
+        },
+        {
+            "pattern": "Subject to the standard (\\d+)-year waiting period for LPR status\\.",
+            "replacement": "Subject to the standard $1-year waiting period for LPR status."
+        },
+        {
+            "pattern": "Pregnancy category: expanded income limits apply\\.",
+            "replacement": "Pregnancy category: expanded income limits apply."
+        },
+        {
+            "pattern": "Child/Family category: expanded income limits apply\\.",
+            "replacement": "Child/Family category: expanded income limits apply."
+        },
+        {
+            "pattern": "Aged or disabled category: non-MAGI rules and asset requirement limit of \\$([\\d\\.]+) apply\\.",
+            "replacement": "Aged or disabled category: non-MAGI rules and asset requirement limit of $1 apply."
+        },
+        {
+            "pattern": "Standard adult category\\.",
+            "replacement": "Standard adult category."
+        },
+        {
+            "pattern": "OBBBA Work Requirements: Individuals aged 60-64 are subject to state Medicaid work requirements if applicable in the state\\.",
+            "replacement": "OBBBA Work Requirements: Individuals aged 60-64 are subject to state Medicaid work requirements if applicable in the state."
+        },
+        {
+            "pattern": "LPR wait period waived due to categorical status or military connection\\.",
+            "replacement": "LPR wait period waived due to categorical status or military connection."
+        },
+        {
+            "pattern": "Investment income was not evaluated; the IRS investment income limit also applies\\.",
+            "replacement": "Investment income was not evaluated; the IRS investment income limit also applies."
+        },
+        {
+            "pattern": "Requires earned income to qualify\\.",
+            "replacement": "Requires earned income to qualify."
+        },
+        {
+            "pattern": "Married filing jointly filing status\\.",
+            "replacement": "Married filing jointly filing status."
+        },
+        {
+            "pattern": "Single or Head of Household filing status\\.",
+            "replacement": "Single or Head of Household filing status."
+        },
+        {
+            "pattern": "Ineligible: Childless EITC is limited to ages (\\d+) to (\\d+)\\.",
+            "replacement": "Ineligible: Childless EITC is limited to ages $1 to $2."
+        },
+        {
+            "pattern": "Age requirement: Age 18 is below childless minimum age of (\\d+)\\. Verification required\\.",
+            "replacement": "Age requirement: Age 18 is below childless minimum age of $1. Verification required."
+        },
+        {
+            "pattern": "Age requirement: Age meets childless range of (\\d+)-(\\d+)\\.",
+            "replacement": "Age requirement: Age meets childless range of $1-$2."
+        },
+        {
+            "pattern": "Categorical requirement: meets requirement due to pregnancy\\.",
+            "replacement": "Categorical requirement: meets requirement due to pregnancy."
+        },
+        {
+            "pattern": "Categorical requirement: meets requirement as an individual under 18\\.",
+            "replacement": "Categorical requirement: meets requirement as an individual under 18."
+        },
+        {
+            "pattern": "Categorical requirement: presence of children meets requirement, but the schema cannot distinguish children under 5 from under 18\\. WIC applies to pregnant or postpartum individuals, infants, and children under age 5\\.",
+            "replacement": "Categorical requirement: presence of children meets requirement, but the schema cannot distinguish children under 5 from under 18. WIC applies to pregnant or postpartum individuals, infants, and children under age 5."
+        },
+        {
+            "pattern": "Categorical requirement failed: WIC requires a pregnant individual, infant, or child under 5\\.",
+            "replacement": "Categorical requirement failed: WIC requires a pregnant individual, infant, or child under 5."
+        },
+        {
+            "pattern": "Invalid request format\\. Please submit the eligibility factors in the expected structured format\\. No personal details are needed\\.",
+            "replacement": "Invalid request format. Please submit the eligibility factors in the expected structured format. No personal details are needed."
+        },
+        {
+            "pattern": "WARNING: Request rejected\\. Please do not share sensitive personal identifying information \\(PII\\) such as names, Social Security Numbers, addresses, or dates of birth\\.",
+            "replacement": "WARNING: Request rejected. Please do not share sensitive personal identifying information (PII) such as names, Social Security Numbers, addresses, or dates of birth."
+        },
+        {
+            "pattern": "WARNING: Safety check could not complete\\. Please retry your request without including any personal details, names, addresses, or identifiers\\.",
+            "replacement": "WARNING: Safety check could not complete. Please retry your request without including any personal details, names, addresses, or identifiers."
+        }
+    ]
+}

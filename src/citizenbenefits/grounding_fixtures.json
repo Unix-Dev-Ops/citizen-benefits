@@ -1,0 +1,185 @@
+{
+  "_comment": "WARNING: These are test fixtures for EVAL_MODE only. They are NOT authoritative and must be verified before any real use.",
+  "as_of_date": "2026-01-01",
+  "source_urls": {
+    "fpl": "https://aspe.hhs.gov/topics/poverty-guidelines-poverty-guidelines-poverty-information",
+    "snap": "https://www.fns.usda.gov/snap/recipient/eligibility",
+    "medicaid_chip": "https://www.medicaid.gov",
+    "eitc": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+    "liheap": "https://www.acf.hhs.gov/ocs/programs/liheap",
+    "wic": "https://www.fns.usda.gov/wic/faqs"
+  },
+  "sanity_ranges": {
+    "gross_income_limit_fpl_percentage": [100, 250],
+    "net_income_limit_fpl_percentage": [50, 150],
+    "standard_deduction": [100, 500],
+    "earned_income_deduction_pct": [10, 50],
+    "asset_limit_standard": [1000, 10000],
+    "asset_limit_elderly_disabled": [1000, 10000]
+  },
+  "fpl_monthly_2026": {
+    "contiguous_us": {
+      "1": 1255,
+      "2": 1703,
+      "3": 2152,
+      "4": 2600,
+      "5": 3048,
+      "6": 3497,
+      "7": 3945,
+      "8": 4393,
+      "each_additional": 448
+    },
+    "alaska": {
+      "1": 1568,
+      "2": 2128,
+      "3": 2688,
+      "4": 3248,
+      "5": 3808,
+      "6": 4368,
+      "7": 4928,
+      "8": 5488,
+      "each_additional": 560
+    },
+    "hawaii": {
+      "1": 1443,
+      "2": 1958,
+      "3": 2473,
+      "4": 2988,
+      "5": 3503,
+      "6": 4018,
+      "7": 4533,
+      "8": 5048,
+      "each_additional": 515
+    }
+  },
+  "snap": {
+    "lpr_waiting_period_years": {
+      "value": 5,
+      "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "as_of_date": "2025-10-01"
+    },
+    "gross_income_limit_fpl_percentage": {
+      "value": 130,
+      "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "as_of_date": "2025-10-01"
+    },
+    "net_income_limit_fpl_percentage": {
+      "value": 100,
+      "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "as_of_date": "2025-10-01"
+    },
+    "asset_limit_standard": {
+      "value": 3000,
+      "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "as_of_date": "2025-10-01"
+    },
+    "asset_limit_elderly_disabled": {
+      "value": 4500,
+      "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "as_of_date": "2025-10-01"
+    },
+    "standard_deduction": {
+      "value": 209,
+      "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "as_of_date": "2025-10-01",
+      "note": "standard_deduction is the 1-3 person household value; larger households receive higher deductions"
+    },
+    "earned_income_deduction_pct": {
+      "value": 20,
+      "source_url": "https://www.fns.usda.gov/snap/recipient/eligibility",
+      "as_of_date": "2025-10-01"
+    }
+  },
+  "medicaid_chip": {
+    "lpr_waiting_period_years": {
+      "value": 5,
+      "source_url": "https://www.medicaid.gov",
+      "as_of_date": "2026-01-01"
+    },
+    "adult_limit_fpl_percentage": {
+      "value": 138,
+      "source_url": "https://www.medicaid.gov",
+      "as_of_date": "2026-01-01"
+    },
+    "pregnancy_limit_fpl_percentage": {
+      "value": 200,
+      "source_url": "https://www.medicaid.gov",
+      "as_of_date": "2026-01-01"
+    },
+    "child_limit_fpl_percentage": {
+      "value": 200,
+      "source_url": "https://www.medicaid.gov",
+      "as_of_date": "2026-01-01"
+    },
+    "non_magi_asset_limit": {
+      "value": 2000,
+      "source_url": "https://www.medicaid.gov",
+      "as_of_date": "2026-01-01"
+    },
+    "elderly_disabled_limit_fpl_percentage": {
+      "value": 100,
+      "source_url": "https://www.medicaid.gov",
+      "as_of_date": "2026-01-01"
+    }
+  },
+  "eitc": {
+    "childless_min_age": {
+      "value": 19,
+      "source_url": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+      "as_of_date": "2025-01-01"
+    },
+    "childless_max_age": {
+      "value": 64,
+      "source_url": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+      "as_of_date": "2025-01-01"
+    },
+    "investment_income_limit": {
+      "value": 11000,
+      "source_url": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+      "as_of_date": "2025-01-01"
+    },
+    "income_limits": {
+      "single_or_head_of_household": {
+        "0": 19104,
+        "1": 50434,
+        "2": 57310,
+        "3_or_more": 61555
+      },
+      "married_filing_jointly": {
+        "0": 26214,
+        "1": 57554,
+        "2": 64430,
+        "3_or_more": 68675
+      }
+    }
+  },
+  "liheap": {
+    "income_limit_fpl_percentage": {
+      "value": 150,
+      "source_url": "https://www.acf.hhs.gov/ocs/programs/liheap",
+      "as_of_date": "2026-01-01"
+    },
+    "max_fpl_percentage": {
+      "value": 150,
+      "source_url": "https://www.acf.hhs.gov/ocs/programs/liheap",
+      "as_of_date": "2026-01-01"
+    },
+    "max_smi_percentage": {
+      "value": 60,
+      "source_url": "https://www.acf.hhs.gov/ocs/programs/liheap",
+      "as_of_date": "2026-01-01"
+    }
+  },
+  "wic": {
+    "income_limit_fpl_percentage": {
+      "value": 185,
+      "source_url": "https://www.fns.usda.gov/wic/faqs",
+      "as_of_date": "2026-07-01"
+    },
+    "child_max_age": {
+      "value": 5,
+      "source_url": "https://www.fns.usda.gov/wic/faqs",
+      "as_of_date": "2026-07-01"
+    }
+  }
+}

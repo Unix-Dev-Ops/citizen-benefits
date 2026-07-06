@@ -1,0 +1,11 @@
+{
+  "name": "citizen-benefits-static",
+  "version": "2.1.0",
+  "description": "Asset building and minification scripts for CitizenBenefits",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "Google DeepMind pair-programming",
+  "license": "Apache-2.0"
+}
