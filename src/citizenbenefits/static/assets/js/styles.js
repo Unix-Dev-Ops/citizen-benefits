@@ -324,6 +324,23 @@
         return translated;
     }
 
+    function checkIrsLink(url, lang) {
+        if (!url) return url;
+        if (lang === 'es' && url.includes('irs.gov') && !url.includes('/es/')) {
+            const index = url.indexOf('irs.gov');
+            if (index !== -1) {
+                const prefix = url.substring(0, index + 7);
+                const suffix = url.substring(index + 7);
+                if (suffix.startsWith('/')) {
+                    return prefix + '/es' + suffix;
+                } else {
+                    return prefix + '/es/' + suffix;
+                }
+            }
+        }
+        return url;
+    }
+
     // Dynamic rendering of results so they can be re-translated when the language changes
     function renderResults() {
         if (!resultsContainer || !lastResults) return;
@@ -341,6 +358,9 @@
                 const labelPortal = trans.labelOfficialPortal || 'Official State Portal';
                 const translatedReason = translateReason(program.reason, currentLang);
 
+                const sourceCited = checkIrsLink(program.source_cited, currentLang);
+                const applyLink = checkIrsLink(program.apply_link, currentLang);
+
                 card.innerHTML = `
                     <div class="card-top">
                         <span class="program-name">${program.program.replace('_', '/')}</span>
@@ -349,10 +369,10 @@
                     <p class="reason-text">${translatedReason}</p>
                     <div class="source-cited">
                         <span>${labelSource}:</span>
-                        <a href="${program.source_cited}" target="_blank" class="source-link">${program.source_cited}</a>
+                        <a href="${sourceCited}" target="_blank" class="source-link">${sourceCited}</a>
                         <span>(${formatLocalDate(program.as_of_date, currentLang, countrySelect ? countrySelect.value : 'US')})</span>
                     </div>
-                    ${program.apply_link ? `<a href="${program.apply_link}" target="_blank" class="btn-apply" title="${(translations[currentLang] && translations[currentLang]['titleBtnApply_' + program.program]) || (translations[currentLang] && translations[currentLang].titleBtnApply) || ''}">${labelPortal}</a>` : ''}
+                    ${applyLink ? `<a href="${applyLink}" target="_blank" class="btn-apply" title="${(translations[currentLang] && translations[currentLang]['titleBtnApply_' + program.program]) || (translations[currentLang] && translations[currentLang].titleBtnApply) || ''}">${labelPortal}</a>` : ''}
                 `;
                 resultsContainer.appendChild(card);
             });
@@ -685,7 +705,9 @@
             if (resultsContainer) resultsContainer.innerHTML = '';
             if (loadingSpinner) {
                 loadingSpinner.classList.remove('hidden');
-                loadingSpinner.scrollIntoView({ behavior: "smooth" });
+                setTimeout(() => {
+                    loadingSpinner.scrollIntoView({ behavior: "smooth", block: "start" });
+                }, 50);
             }
 
             if (spinnerTimer) {
@@ -749,13 +771,17 @@
                     lastResults = { type: 'results', data: data.results };
                     renderResults();
                     if (resultsPanel) {
-                        resultsPanel.scrollIntoView({ behavior: "smooth" });
+                        setTimeout(() => {
+                            resultsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+                        }, 50);
                     }
                 } else if (data.summary) {
                     lastResults = { type: 'summary', text: data.summary };
                     renderResults();
                     if (resultsPanel) {
-                        resultsPanel.scrollIntoView({ behavior: "smooth" });
+                        setTimeout(() => {
+                            resultsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+                        }, 50);
                     }
                 } else {
                     throw new Error('No eligibility results returned.');
@@ -765,7 +791,9 @@
                 if (errorPanel) {
                     errorPanel.textContent = err.message;
                     errorPanel.classList.remove('hidden');
-                    errorPanel.scrollIntoView({ behavior: "smooth" });
+                    setTimeout(() => {
+                        errorPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }, 50);
                 }
             } finally {
                 clearInterval(timerInterval);

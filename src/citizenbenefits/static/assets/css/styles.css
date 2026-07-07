@@ -638,6 +638,7 @@ label {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    scroll-margin-top: 95px;
     /* margin: 2rem 0; */
 }
 
@@ -693,6 +694,7 @@ label {
 .results-section {
     flex-direction: column;
     gap: 1.5rem;
+    scroll-margin-top: 95px;
 }
 
 .results-section:not(.hidden) {
@@ -828,6 +830,7 @@ label {
     color: #fca5a5;
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
+    scroll-margin-top: 95px;
 }
 
 .error-banner:not(.hidden) {

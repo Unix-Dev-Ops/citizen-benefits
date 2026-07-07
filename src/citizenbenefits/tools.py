@@ -249,10 +249,12 @@ def get_grounding_data(program: BenefitProgram, state: str) -> GroundingData:
         )
         
     # Live fetch path
+    final_url = url
     try:
         # Attempt live fetch to verify connectivity
         # Note: We use follow_redirects=True as government sites often redirect
         response = httpx.get(url, follow_redirects=True, timeout=5.0)
+        final_url = str(response.url)
         if response.status_code == 200:
             # Live fetch succeeded!
             if program == BenefitProgram.SNAP:
@@ -273,7 +275,7 @@ def get_grounding_data(program: BenefitProgram, state: str) -> GroundingData:
                     tables_resp = httpx.get(tables_link, follow_redirects=True, timeout=5.0)
                     if tables_resp.status_code == 200:
                         parsed_values = parse_eitc_live(tables_resp.text)
-                        url = tables_link
+                        final_url = str(tables_resp.url)
                     else:
                         parsed_values = None
                 else:
@@ -297,7 +299,7 @@ def get_grounding_data(program: BenefitProgram, state: str) -> GroundingData:
                 flat_values["fpl"] = fixtures.get("fpl_monthly_2026", {})
                 return GroundingData(
                     values=flat_values,
-                    source_cited=url,
+                    source_cited=final_url,
                     as_of_date=date.today(),
                     grounded=True,
                 )
@@ -314,7 +316,7 @@ def get_grounding_data(program: BenefitProgram, state: str) -> GroundingData:
             
             return GroundingData(
                 values=flat_values,
-                source_cited=url,
+                source_cited=final_url,
                 as_of_date=date.today(),
                 grounded=False,
             )
@@ -334,35 +336,93 @@ def get_grounding_data(program: BenefitProgram, state: str) -> GroundingData:
     
     return GroundingData(
         values=flat_values,
-        source_cited=url,
+        source_cited=final_url,
         as_of_date=date(2026, 1, 1),
         grounded=False,
     )
 
 
+# Recorded state SNAP links for future reference
+RECORDED_STATE_SNAP_LINKS = {
+    "washington": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/washington",
+    "alabama": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/alabama",
+    "alaska": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/alaska",
+    "arizona": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/arizona",
+    "arkansas": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/arkansas",
+    "california": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/california",
+    "colorado": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/colorado",
+    "connecticut": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/connecticut",
+    "delaware": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/delaware",
+    "district of columbia": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/district_of_columbia",
+    "florida": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/florida",
+    "georgia": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/georgia",
+    "hawaii": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/hawaii",
+    "idaho": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/idaho",
+    "illinois": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/illinois",
+    "indiana": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/indiana",
+    "iowa": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/iowa",
+    "kansas": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/kansas",
+    "kentucky": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/kentucky",
+    "louisiana": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/louisiana",
+    "maine": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/maine",
+    "maryland": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/maryland",
+    "massachusetts": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/massachusetts",
+    "michigan": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/michigan",
+    "minnesota": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/minnesota",
+    "mississippi": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/mississippi",
+    "missouri": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/missouri",
+    "montana": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/montana",
+    "nebraska": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/nebraska",
+    "nevada": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/nevada",
+    "new hampshire": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/new_hampshire",
+    "new jersey": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/new_jersey",
+    "new mexico": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/new_mexico",
+    "new york": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/new_york",
+    "new york city": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/new_york_city",
+    "north carolina": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/north_carolina",
+    "north dakota": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/north_dakota",
+    "ohio": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/ohio",
+    "oklahoma": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/oklahoma",
+    "oregon": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/oregon",
+    "pennsylvania": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/pennsylvania",
+    "rhode island": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/rhode_island",
+    "south carolina": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/south_carolina",
+    "south dakota": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/south_dakota",
+    "tennessee": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/tennessee",
+    "texas": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/texas",
+    "utah": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/utah",
+    "vermont": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/vermont",
+    "virginia": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/virginia",
+    "west virginia": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/west_virginia",
+    "wisconsin": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/wisconsin",
+    "wyoming": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/wyoming",
+    "guam": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/guam",
+    "puerto rico": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/puerto_rico",
+    "virgin islands": "https://www.fna.usda.gov/snap-directory-entry/snap-directory-entry/virgin_islands",
+}
+
+# Recorded state Medicaid links for future reference
+RECORDED_STATE_MEDICAID_LINKS = {
+    "alabama": "https://medicaid.alabama.gov/",
+    "alaska": "https://health.alaska.gov/dpa/Pages/default.aspx",
+    "american samoa": "http://medicaid.as.gov/",
+    "arizona": "http://www.healthearizonaplus.gov/",
+    "arkansas": "http://access.arkansas.gov/",
+    "california": "http://www.dhcs.ca.gov/Pages/default.aspx",
+    "colorado": "http://www.colorado.gov/hcpf",
+    "connecticut": "http://www.ct.gov/hh/site/default.asp",
+}
+
+PROGRAM_APPLY_LINKS = {
+    "snap": "https://www.fna.usda.gov/snap/state-directory",
+    "medicaid_chip": "https://www.healthcare.gov/medicaid-chip/",
+    "wic": "https://www.fna.usda.gov/wic/program-contacts",
+    "liheap": "https://liheapch.acf.gov/search-tool/state-territory/",
+    "eitc": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/earned-income-and-earned-income-tax-credit-eitc-tables",
+}
+
+
 def get_official_link(program: BenefitProgram, state: str) -> str:
     """Returns the official application portal link for the program in the given state."""
-    # State-specific portals (Ohio examples as requested in happy path scenarios)
-    portals = {
-        "OH": {
-            BenefitProgram.SNAP: "https://benefits.ohio.gov",
-            BenefitProgram.MEDICAID_CHIP: "https://benefits.ohio.gov",
-            BenefitProgram.LIHEAP: "https://development.ohio.gov/individual/energy-assistance/1-home-energy-assistance-program",
-            BenefitProgram.WIC: "https://odh.ohio.gov/know-our-programs/women-infants-children",
-            BenefitProgram.EITC: "https://tax.ohio.gov",
-        }
-    }
-    
-    state_portals = portals.get(state.upper())
-    if state_portals and program in state_portals:
-        return state_portals[program]
-        
-    # National fallback links
-    fallbacks = {
-        BenefitProgram.SNAP: "https://www.fns.usda.gov/snap/state-information/resources",
-        BenefitProgram.MEDICAID_CHIP: "https://www.healthcare.gov/medicaid-chip/",
-        BenefitProgram.LIHEAP: "https://www.acf.hhs.gov/ocs/programs/liheap/state-contact-map",
-        BenefitProgram.WIC: "https://www.fns.usda.gov/wic/wic-contacts",
-        BenefitProgram.EITC: "https://www.irs.gov/eitc",
-    }
-    return fallbacks.get(program, "https://www.benefits.gov")
+    return PROGRAM_APPLY_LINKS.get(program.value, "https://www.benefits.gov")
+

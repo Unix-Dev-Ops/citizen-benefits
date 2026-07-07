@@ -36,8 +36,9 @@ def test_router_populates_links(build_request):
     event = router(ctx, results)
     updated_results = event.output
     
-    assert updated_results[0].apply_link == "https://benefits.ohio.gov"
-    assert updated_results[1].apply_link == "https://benefits.ohio.gov"
+    assert updated_results[0].apply_link == "https://www.fna.usda.gov/snap/state-directory"
+    assert updated_results[1].apply_link == "https://www.healthcare.gov/medicaid-chip/"
+
 
 
 def test_explainer_disclaimer(build_request):

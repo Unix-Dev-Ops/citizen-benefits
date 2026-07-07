@@ -183,15 +183,15 @@
         },
         {
             "pattern": "Gross income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Gross income requirement: completely below/at limit of $1%."
+            "replacement": "Evaluation: completely below/at limit of $1%."
         },
         {
             "pattern": "Gross income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Gross income requirement: completely above limit of $1%."
+            "replacement": "Evaluation: completely above limit of $1%."
         },
         {
             "pattern": "Gross income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Gross income requirement: income band straddles the limit of $1%."
+            "replacement": "Evaluation: income band straddles the limit of $1%."
         },
         {
             "pattern": "Elderly or disabled household: gross income requirement waived\\.",
@@ -199,39 +199,39 @@
         },
         {
             "pattern": "Net income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Net income requirement: completely below/at limit of $1%."
+            "replacement": "Evaluation: completely below/at limit of $1%."
         },
         {
             "pattern": "Net income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Net income requirement: completely above limit of $1%."
+            "replacement": "Evaluation: completely above limit of $1%."
         },
         {
             "pattern": "Net income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Net income requirement: income band straddles the limit of $1%."
+            "replacement": "Evaluation: income band straddles the limit of $1%."
         },
         {
             "pattern": "Income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Income requirement: completely below/at limit of $1%."
+            "replacement": "Evaluation: completely below/at limit of $1%."
         },
         {
             "pattern": "Income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Income requirement: completely above limit of $1%."
+            "replacement": "Evaluation: completely above limit of $1%."
         },
         {
             "pattern": "Income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Income requirement: income band straddles the limit of $1%."
+            "replacement": "Evaluation: income band straddles the limit of $1%."
         },
         {
             "pattern": "Income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%",
-            "replacement": "Income requirement: completely below/at limit of $1%"
+            "replacement": "Evaluation: completely below/at limit of $1%"
         },
         {
             "pattern": "Income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%",
-            "replacement": "Income requirement: completely above limit of $1%"
+            "replacement": "Evaluation: completely above limit of $1%"
         },
         {
             "pattern": "Income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%",
-            "replacement": "Income requirement: income band straddles the limit of $1%"
+            "replacement": "Evaluation: income band straddles the limit of $1%"
         },
         {
             "pattern": "Subject to resource requirement of \\$([\\d\\.]+)\\.",
@@ -263,7 +263,7 @@
         },
         {
             "pattern": "Pregnancy category: expanded income limits apply\\.",
-            "replacement": "Pregnancy category: expanded income limits apply."
+            "replacement": "Evaluation: expanded income limits apply."
         },
         {
             "pattern": "Child/Family category: expanded income limits apply\\.",
@@ -287,7 +287,7 @@
         },
         {
             "pattern": "Investment income was not evaluated; the IRS investment income limit also applies\\.",
-            "replacement": "Investment income was not evaluated; the IRS investment income limit also applies."
+            "replacement": "Evaluation: Investment income was not evaluated; the IRS investment income limit also applies."
         },
         {
             "pattern": "Requires earned income to qualify\\.",
@@ -307,27 +307,27 @@
         },
         {
             "pattern": "Age requirement: Age 18 is below childless minimum age of (\\d+)\\. Verification required\\.",
-            "replacement": "Age requirement: Age 18 is below childless minimum age of $1. Verification required."
+            "replacement": "Evaluation: Age 18 is below childless minimum age of $1. Verification required."
         },
         {
             "pattern": "Age requirement: Age meets childless range of (\\d+)-(\\d+)\\.",
-            "replacement": "Age requirement: Age meets childless range of $1-$2."
+            "replacement": "Evaluation: Age meets childless range of $1-$2."
         },
         {
             "pattern": "Categorical requirement: meets requirement due to pregnancy\\.",
-            "replacement": "Categorical requirement: meets requirement due to pregnancy."
+            "replacement": "Evaluation: meets requirement due to pregnancy."
         },
         {
             "pattern": "Categorical requirement: meets requirement as an individual under 18\\.",
-            "replacement": "Categorical requirement: meets requirement as an individual under 18."
+            "replacement": "Evaluation: meets requirement as an individual under 18."
         },
         {
             "pattern": "Categorical requirement: presence of children meets requirement, but the schema cannot distinguish children under 5 from under 18\\. WIC applies to pregnant or postpartum individuals, infants, and children under age 5\\.",
-            "replacement": "Categorical requirement: presence of children meets requirement, but the schema cannot distinguish children under 5 from under 18. WIC applies to pregnant or postpartum individuals, infants, and children under age 5."
+            "replacement": "Evaluation: presence of children meets requirement, but the schema cannot distinguish children under 5 from under 18. WIC applies to pregnant or postpartum individuals, infants, and children under age 5."
         },
         {
             "pattern": "Categorical requirement failed: WIC requires a pregnant individual, infant, or child under 5\\.",
-            "replacement": "Categorical requirement failed: WIC requires a pregnant individual, infant, or child under 5."
+            "replacement": "Evaluation failed: WIC requires a pregnant individual, infant, or child under 5."
         },
         {
             "pattern": "Invalid request format\\. Please submit the eligibility factors in the expected structured format\\. No personal details are needed\\.",

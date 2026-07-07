@@ -183,15 +183,15 @@
         },
         {
             "pattern": "Gross income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources brutes : completement en dessous ou au niveau de la limite de $1%."
+            "replacement": "Évaluation : completement en dessous ou au niveau de la limite de $1%."
         },
         {
             "pattern": "Gross income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources brutes : completement au-dessus de la limite de $1%."
+            "replacement": "Évaluation : completement au-dessus de la limite de $1%."
         },
         {
             "pattern": "Gross income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources brutes : la tranche de revenu chevauche la limite de $1%."
+            "replacement": "Évaluation : la tranche de revenu chevauche la limite de $1%."
         },
         {
             "pattern": "Elderly or disabled household: gross income requirement waived\\.",
@@ -199,39 +199,39 @@
         },
         {
             "pattern": "Net income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources nettes : completement en dessous ou au niveau de la limite de $1%."
+            "replacement": "Évaluation : completement en dessous ou au niveau de la limite de $1%."
         },
         {
             "pattern": "Net income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources nettes : completement au-dessus de la limite de $1%."
+            "replacement": "Évaluation : completement au-dessus de la limite de $1%."
         },
         {
             "pattern": "Net income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources nettes : la tranche de revenu chevauche la limite de $1%."
+            "replacement": "Évaluation : la tranche de revenu chevauche la limite de $1%."
         },
         {
             "pattern": "Income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources : completement en dessous ou au niveau de la limite de $1%."
+            "replacement": "Évaluation : completement en dessous ou au niveau de la limite de $1%."
         },
         {
             "pattern": "Income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources : completement au-dessus de la limite de $1%."
+            "replacement": "Évaluation : completement au-dessus de la limite de $1%."
         },
         {
             "pattern": "Income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%\\.",
-            "replacement": "Condition de ressources : la tranche de revenu chevauche la limite de $1%."
+            "replacement": "Évaluation : la tranche de revenu chevauche la limite de $1%."
         },
         {
             "pattern": "Income requirement: completely below/at limit of (\\d+(?:\\.\\d+)?)%",
-            "replacement": "Condition de ressources : completement en dessous ou au niveau de la limite de $1%"
+            "replacement": "Évaluation : completement en dessous ou au niveau de la limite de $1%"
         },
         {
             "pattern": "Income requirement: completely above limit of (\\d+(?:\\.\\d+)?)%",
-            "replacement": "Condition de ressources : completement au-dessus de la limite de $1%"
+            "replacement": "Évaluation : completement au-dessus de la limite de $1%"
         },
         {
             "pattern": "Income requirement: income band straddles the limit of (\\d+(?:\\.\\d+)?)%",
-            "replacement": "Condition de ressources : la tranche de revenu chevauche la limite de $1%"
+            "replacement": "Évaluation : la tranche de revenu chevauche la limite de $1%"
         },
         {
             "pattern": "Subject to resource requirement of \\$([\\d\\.]+)\\.",
@@ -263,7 +263,7 @@
         },
         {
             "pattern": "Pregnancy category: expanded income limits apply\\.",
-            "replacement": "Categorie grossesse : des limites de revenus élargies s'appliquent."
+            "replacement": "Évaluation : des limites de revenus élargies s'appliquent."
         },
         {
             "pattern": "Child/Family category: expanded income limits apply\\.",
@@ -287,7 +287,7 @@
         },
         {
             "pattern": "Investment income was not evaluated; the IRS investment income limit also applies\\.",
-            "replacement": "Les revenus de placement n'ont pas ete evalues ; la limite des revenus de placement de l'IRS s'applique egalement."
+            "replacement": "Évaluation : Les revenus de placement n'ont pas ete evalues ; la limite des revenus de placement de l'IRS s'applique egalement."
         },
         {
             "pattern": "Requires earned income to qualify\\.",
@@ -307,27 +307,27 @@
         },
         {
             "pattern": "Age requirement: Age 18 is below childless minimum age of (\\d+)\\. Verification required\\.",
-            "replacement": "Condition d'age : L'age de 18 ans est inferieur a l'age minimal de $1 ans sans enfant. Verification requise."
+            "replacement": "Évaluation : L'age de 18 ans est inferieur a l'age minimal de $1 ans sans enfant. Verification requise."
         },
         {
             "pattern": "Age requirement: Age meets childless range of (\\d+)-(\\d+)\\.",
-            "replacement": "Condition d'age : L'age correspond a la tranche de $1-$2 ans sans enfant."
+            "replacement": "Évaluation : L'age correspond a la tranche de $1-$2 ans sans enfant."
         },
         {
             "pattern": "Categorical requirement: meets requirement due to pregnancy\\.",
-            "replacement": "Condition categorielle : repond aux exigences en raison de la grossesse."
+            "replacement": "Évaluation : repond aux exigences en raison de la grossesse."
         },
         {
             "pattern": "Categorical requirement: meets requirement as an individual under 18\\.",
-            "replacement": "Condition categorielle : repond aux exigences en tant qu'individu de moins de 18 ans."
+            "replacement": "Évaluation : repond aux exigences en tant qu'individu de moins de 18 ans."
         },
         {
             "pattern": "Categorical requirement: presence of children meets requirement, but the schema cannot distinguish children under 5 from under 18\\. WIC applies to pregnant or postpartum individuals, infants, and children under age 5\\.",
-            "replacement": "Condition categorielle : la presence d'enfants repond aux exigences, mais le systeme ne peut pas distinguer les enfants de moins de 5 ans de ceux de moins de 18 ans. Le WIC s'applique aux personnes enceintes ou en post-partum, aux nourrissons et aux enfants de moins de 5 ans."
+            "replacement": "Évaluation : la presence d'enfants repond aux exigences, mais le systeme ne peut pas distinguer les enfants de moins de 5 ans de ceux de moins de 18 ans. Le WIC s'applique aux personnes enceintes ou en post-partum, aux nourrissons et aux enfants de moins de 5 ans."
         },
         {
             "pattern": "Categorical requirement failed: WIC requires a pregnant individual, infant, or child under 5\\.",
-            "replacement": "Condition categorielle non remplie : Le WIC necessite une personne enceinte, un nourrisson ou un enfant de moins de 5 ans."
+            "replacement": "Évaluation échouée : Le WIC necessite une personne enceinte, un nourrisson ou un enfant de moins de 5 ans."
         },
         {
             "pattern": "Invalid request format\\. Please submit the eligibility factors in the expected structured format\\. No personal details are needed\\.",
