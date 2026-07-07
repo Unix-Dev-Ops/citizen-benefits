@@ -83,16 +83,22 @@ def status_gate(node_input: Union[str, EligibilityRequest]) -> Event:
 
 def pii_guard(ctx: Context, node_input: Union[str, EligibilityRequest]) -> Event:
     """Scans the user input for Personally Identifiable Information (PII).
-    
-    Uses regex for patterns (SSN, email, phone) and gemini-3.5-flash for name/address detection.
-    Treats all inputs strictly as data within <user_data> XML tags. Fails closed on exception.
+
+    For structured EligibilityRequest objects (all validated enum/bool/int/ZIP fields,
+    no free-text), the check is skipped entirely - there is no channel for PII.
+    For raw string inputs, uses regex (SSN, email, phone) and an LLM check for
+    names and street addresses. Treats all inputs as data within <user_data> tags.
+    Fails closed on exception.
     """
-    # Extract raw text to analyze
+    # Structured form submissions have no free-text fields - all values are validated
+    # enums, booleans, integers, or a 5-digit ZIP. Skip the LLM check entirely.
+    if isinstance(node_input, EligibilityRequest):
+        return Event(output=node_input, route="clean")
+
+    # Extract raw text to analyze for string inputs
     raw_text = ""
     if isinstance(node_input, str):
         raw_text = node_input
-    elif isinstance(node_input, EligibilityRequest):
-        raw_text = node_input.model_dump_json()
     
     # 1. Regex Checks
     pii_regexes = {
