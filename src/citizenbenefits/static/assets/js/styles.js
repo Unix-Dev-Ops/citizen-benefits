@@ -337,6 +337,8 @@
                     return prefix + '/es/' + suffix;
                 }
             }
+        } else if (lang !== 'es' && url.includes('irs.gov') && url.includes('/es/')) {
+            return url.replace('/es/', '/');
         }
         return url;
     }
