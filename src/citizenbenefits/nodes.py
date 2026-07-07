@@ -86,16 +86,28 @@ def pii_guard(ctx: Context, node_input: Union[str, EligibilityRequest]) -> Event
 
     For structured EligibilityRequest objects (all validated enum/bool/int/ZIP fields,
     no free-text), the check is skipped entirely - there is no channel for PII.
-    For raw string inputs, uses regex (SSN, email, phone) and an LLM check for
-    names and street addresses. Treats all inputs as data within <user_data> tags.
+    When the input is a JSON string that parses as a valid EligibilityRequest (e.g.,
+    from the web API which serializes before sending), it is also passed through
+    immediately - the schema enforces that no free-text PII can be present.
+    For all other raw string inputs, uses regex (SSN, email, phone) and an LLM check
+    for names and street addresses. Treats all inputs as data within <user_data> tags.
     Fails closed on exception.
     """
-    # Structured form submissions have no free-text fields - all values are validated
-    # enums, booleans, integers, or a 5-digit ZIP. Skip the LLM check entirely.
+    # Already a validated structured object - no free-text, skip PII check.
     if isinstance(node_input, EligibilityRequest):
         return Event(output=node_input, route="clean")
 
-    # Extract raw text to analyze for string inputs
+    # If the string is a valid EligibilityRequest JSON (sent by the web layer which
+    # serializes the validated form before passing to ADK), pass it through immediately.
+    # The schema validates all fields as enums/booleans/integers/ZIP - no PII can enter.
+    if isinstance(node_input, str):
+        try:
+            parsed_req = EligibilityRequest.model_validate_json(node_input)
+            return Event(output=parsed_req, route="clean")
+        except Exception:
+            pass  # Not a structured request - continue to PII scan below
+
+    # Extract raw text to analyze for unstructured string inputs
     raw_text = ""
     if isinstance(node_input, str):
         raw_text = node_input
