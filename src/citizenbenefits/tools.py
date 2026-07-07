@@ -480,11 +480,74 @@ SNAP_STATE_DIRECTORY_LINKS = {
 }
 
 
+WIC_STATE_DIRECTORY_LINKS = {
+    "AL": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_state%3A289&f%5B1%5D=fns_contact_related_programs%3A32",
+    "AK": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_state%3A288&f%5B1%5D=fns_contact_related_programs%3A32",
+    "AS": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A312",
+    "AZ": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A287",
+    "AR": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A278",
+    "CA": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A286",
+    "CO": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A266",
+    "CT": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A285",
+    "DE": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A291",
+    "DC": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A290",
+    "FL": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A265",
+    "GA": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A308",
+    "GU": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A295",
+    "HI": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A303",
+    "ID": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A268",
+    "IL": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A264",
+    "IN": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A302",
+    "IA": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A294",
+    "KS": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A284",
+    "KY": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A301",
+    "LA": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A300",
+    "ME": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_state%3A263&f%5B1%5D=fns_contact_related_programs%3A32",
+    "MD": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A304",
+    "MA": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A299",
+    "MI": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A283",
+    "MN": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A298",
+    "MS": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A297",
+    "MO": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A311",
+    "MT": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A262",
+    "NE": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A258",
+    "NV": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A269",
+    "NH": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A281",
+    "NJ": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A279",
+    "NM": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A307",
+    "NY": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A261",
+    "NC": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A260",
+    "ND": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A270",
+    "MP": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A313",
+    "OH": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A276",
+    "OK": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A271",
+    "OR": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A296",
+    "PA": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A273",
+    "PR": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A277",
+    "RI": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A293",
+    "SC": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A259",
+    "SD": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A292",
+    "TN": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A306",
+    "TX": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A309",
+    "UT": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A274",
+    "VT": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A275",
+    "VI": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A280",
+    "VA": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A267",
+    "WA": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A310",
+    "WV": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A272",
+    "WI": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A282",
+    "WY": "https://www.fna.usda.gov/fns-contacts?sort_bef_combine=title_fulltext_ASC&f%5B0%5D=fns_contact_related_programs%3A32&f%5B1%5D=fns_contact_state%3A305",
+}
+
+
 def get_official_link(program: BenefitProgram, state: str) -> str:
     """Returns the official application portal link for the program in the given state."""
+    state_upper = state.upper()
     if program == BenefitProgram.SNAP:
-        state_upper = state.upper()
         if state_upper in SNAP_STATE_DIRECTORY_LINKS:
             return SNAP_STATE_DIRECTORY_LINKS[state_upper]
+    elif program == BenefitProgram.WIC:
+        if state_upper in WIC_STATE_DIRECTORY_LINKS:
+            return WIC_STATE_DIRECTORY_LINKS[state_upper]
     return PROGRAM_APPLY_LINKS.get(program.value, "https://www.benefits.gov")
 
