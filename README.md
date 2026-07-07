@@ -17,8 +17,7 @@ Currently focused on US federal programs (SNAP, Medicaid/CHIP, EITC, LIHEAP, WIC
 
 ## Demo Video
 
-[![CitizenBenefits Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
+[![CitizenBenefits Demo](https://img.youtube.com/vi/Lg9Bb8VGDcU/hqdefault.jpg)](https://youtu.be/Lg9Bb8VGDcU)
 
 
 ## Key Features

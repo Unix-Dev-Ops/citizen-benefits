@@ -8,9 +8,9 @@
 
 **Citizen Benefits** - Find the benefits you qualify for.
 
-- Live demo: https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app
-- Code: https://github.com/Unix-Dev-Ops/citizen-benefits
-- Video: [VIDEO LINK]
+- [Live Demo](https://citizenbenefits-api-fzxvf6yczq-uc.a.run.app)
+- [Code](https://github.com/Unix-Dev-Ops/citizen-benefits)
+- [Video](https://www.youtube.com/watch?v=Lg9Bb8VGDcU)
 
 ---
 
