@@ -422,7 +422,69 @@ PROGRAM_APPLY_LINKS = {
 }
 
 
+SNAP_STATE_DIRECTORY_LINKS = {
+    "AL": "https://www.fna.usda.gov/snap-directory-entry/alabama",
+    "AK": "https://www.fna.usda.gov/snap-directory-entry/alaska",
+    "AZ": "https://www.fna.usda.gov/snap-directory-entry/arizona",
+    "AR": "https://www.fna.usda.gov/snap-directory-entry/arkansas",
+    "CA": "https://www.fna.usda.gov/snap-directory-entry/california",
+    "CO": "https://www.fna.usda.gov/snap-directory-entry/colorado",
+    "CT": "https://www.fna.usda.gov/snap-directory-entry/connecticut",
+    "DE": "https://www.fna.usda.gov/snap-directory-entry/delaware",
+    "DC": "https://www.fna.usda.gov/snap-directory-entry/district-columbia",
+    "FL": "https://www.fna.usda.gov/snap-directory-entry/florida",
+    "GA": "https://www.fna.usda.gov/snap-directory-entry/georgia",
+    "GU": "https://www.fna.usda.gov/snap-directory-entry/guam",
+    "HI": "https://www.fna.usda.gov/snap-directory-entry/hawaii",
+    "ID": "https://www.fna.usda.gov/snap-directory-entry/idaho",
+    "IL": "https://www.fna.usda.gov/snap-directory-entry/illinois",
+    "IN": "https://www.fna.usda.gov/snap-directory-entry/indiana",
+    "IA": "https://www.fna.usda.gov/snap-directory-entry/iowa",
+    "KS": "https://www.fna.usda.gov/snap-directory-entry/kansas",
+    "KY": "https://www.fna.usda.gov/snap-directory-entry/kentucky",
+    "LA": "https://www.fna.usda.gov/snap-directory-entry/louisiana",
+    "ME": "https://www.fna.usda.gov/snap-directory-entry/maine",
+    "MD": "https://www.fna.usda.gov/snap-directory-entry/maryland",
+    "MA": "https://www.fna.usda.gov/snap-directory-entry/massachusetts",
+    "MI": "https://www.fna.usda.gov/snap-directory-entry/michigan",
+    "MN": "https://www.fna.usda.gov/snap-directory-entry/minnesota",
+    "MS": "https://www.fna.usda.gov/snap-directory-entry/mississippi",
+    "MO": "https://www.fna.usda.gov/snap-directory-entry/missouri",
+    "MT": "https://www.fna.usda.gov/snap-directory-entry/montana",
+    "NE": "https://www.fna.usda.gov/snap-directory-entry/nebraska",
+    "NV": "https://www.fna.usda.gov/snap-directory-entry/nevada",
+    "NH": "https://www.fna.usda.gov/snap-directory-entry/new-hampshire",
+    "NJ": "https://www.fna.usda.gov/snap-directory-entry/new-jersey",
+    "NM": "https://www.fna.usda.gov/snap-directory-entry/new-mexico",
+    "NY": "https://www.fna.usda.gov/snap-directory-entry/new-york",
+    "NC": "https://www.fna.usda.gov/snap-directory-entry/north-carolina",
+    "ND": "https://www.fna.usda.gov/snap-directory-entry/north-dakota",
+    "OH": "https://www.fna.usda.gov/snap-directory-entry/ohio",
+    "OK": "https://www.fna.usda.gov/snap-directory-entry/oklahoma",
+    "OR": "https://www.fna.usda.gov/snap-directory-entry/oregon",
+    "PA": "https://www.fna.usda.gov/snap-directory-entry/pennsylvania",
+    "PR": "https://www.fna.usda.gov/snap-directory-entry/puerto-rico",
+    "RI": "https://www.fna.usda.gov/snap-directory-entry/rhode-island",
+    "SC": "https://www.fna.usda.gov/snap-directory-entry/south-carolina",
+    "SD": "https://www.fna.usda.gov/snap-directory-entry/south-dakota",
+    "TN": "https://www.fna.usda.gov/snap-directory-entry/tennessee",
+    "TX": "https://www.fna.usda.gov/snap-directory-entry/texas",
+    "UT": "https://www.fna.usda.gov/snap-directory-entry/utah",
+    "VT": "https://www.fna.usda.gov/snap-directory-entry/vermont",
+    "VI": "https://www.fna.usda.gov/snap-directory-entry/virgin-islands",
+    "VA": "https://www.fna.usda.gov/snap-directory-entry/virginia",
+    "WA": "https://www.fna.usda.gov/snap-directory-entry/washington",
+    "WV": "https://www.fna.usda.gov/snap-directory-entry/west-virginia",
+    "WI": "https://www.fna.usda.gov/snap-directory-entry/wisconsin",
+    "WY": "https://www.fna.usda.gov/snap-directory-entry/wyoming",
+}
+
+
 def get_official_link(program: BenefitProgram, state: str) -> str:
     """Returns the official application portal link for the program in the given state."""
+    if program == BenefitProgram.SNAP:
+        state_upper = state.upper()
+        if state_upper in SNAP_STATE_DIRECTORY_LINKS:
+            return SNAP_STATE_DIRECTORY_LINKS[state_upper]
     return PROGRAM_APPLY_LINKS.get(program.value, "https://www.benefits.gov")
 
