@@ -540,6 +540,66 @@ WIC_STATE_DIRECTORY_LINKS = {
 }
 
 
+MEDICAID_STATE_DIRECTORY_LINKS = {
+    "AL": "https://www.benefits.gov",  # Could not verify https://medicaid.alabama.gov/ due to SSL timeout
+    "AK": "https://health.alaska.gov/dpa/Pages/default.aspx",
+
+    "AS": "https://www.benefits.gov",  # Could not verify http://medicaid.as.gov/
+    "AZ": "http://www.healthearizonaplus.gov/",
+    "AR": "https://www.benefits.gov",  # Could not verify http://access.arkansas.gov/
+    "CA": "http://www.dhcs.ca.gov/Pages/default.aspx",
+    "CO": "http://www.colorado.gov/hcpf",
+    "CT": "http://www.ct.gov/hh/site/default.asp",
+    "DE": "https://www.benefits.gov",  # Could not verify http://www.dhss.delaware.gov/dhss/dmma/
+    "DC": "http://dhcf.dc.gov/service/medicaid",
+    "FL": "http://www.myflorida.com/accessflorida/",
+    "GA": "https://www.benefits.gov",  # Could not verify http://dfcs.dhs.georgia.gov/
+    "GU": "http://dphss.guam.gov/",
+    "HI": "http://mybenefits.hawaii.gov/",
+    "ID": "http://www.healthandwelfare.idaho.gov/",
+    "IL": "http://www.illinois.gov/hfs/medicalclients",
+    "IN": "https://www.in.gov/fssa/",
+    "IA": "https://hhs.iowa.gov/programs/welcome-iowa-medicaid/iowa-health-link",
+    "KS": "http://www.kancare.ks.gov/",
+    "KY": "https://www.benefits.gov",  # Could not verify http://chfs.ky.gov/dms/
+    "LA": "http://www.dhh.la.gov/",
+    "ME": "http://www.maine.gov/dhhs/ofi/",
+    "MD": "https://mmcp.health.maryland.gov/Pages/home.aspx",
+    "MA": "https://www.mass.gov/topics/masshealth",
+    "MI": "http://www.michigan.gov/mdhhs",
+    "MN": "http://mn.gov/dhs/",
+    "MS": "http://www.medicaid.ms.gov/",
+    "MO": "http://www.mydss.mo.gov/",
+    "MT": "http://www.dphhs.mt.gov/",
+    "NE": "http://accessnebraska.ne.gov/",
+    "NV": "https://dwss.nv.gov/",
+    "NH": "https://nheasy.nh.gov/",
+    "NJ": "https://www.benefits.gov",  # Could not verify http://www.njfamilycare.org/
+    "NM": "https://www.yes.state.nm.us/",
+    "NY": "http://www.health.ny.gov/health_care/medicaid/",
+    "NC": "https://medicaid.ncdhhs.gov/",
+    "ND": "https://www.hhs.nd.gov/human-service/zones",
+    "OH": "https://www.benefits.gov",  # Could not verify http://medicaid.ohio.gov/
+    "OK": "http://www.okhca.org/",
+    "OR": "https://www.benefits.gov",  # Could not verify https://one.oregon.gov/
+    "PA": "https://www.compass.state.pa.us/",
+    "PR": "https://medicaid.pr.gov/",
+    "RI": "https://healthyrhode.ri.gov/HIXWebI3/DisplayRIServices",
+    "SC": "https://www.scdhhs.gov/",
+    "SD": "http://dss.sd.gov/",
+    "TN": "https://tenncareconnect.tn.gov/",
+    "TX": "http://www.yourtexasbenefits.com/",
+    "UT": "http://www.jobs.utah.gov/",
+    "VT": "http://www.greenmountaincare.org/",
+    "VI": "https://www.benefits.gov",  # Could not verify http://www.dhs.gov.vi/financial_programs/medical_assistance.html
+    "VA": "http://www.coverva.org/",
+    "WA": "http://www.hca.wa.gov/medicaid/Pages/index.aspx",
+    "WV": "https://dhhr.wv.gov/bms/Pages/default.aspx",
+    "WI": "https://www.dhs.wisconsin.gov/forwardhealth/imagency/index.htm",
+    "WY": "https://www.benefits.gov",  # Could not verify http://www.wesystem.wyo.gov/
+}
+
+
 def get_official_link(program: BenefitProgram, state: str) -> str:
     """Returns the official application portal link for the program in the given state."""
     state_upper = state.upper()
@@ -549,5 +609,8 @@ def get_official_link(program: BenefitProgram, state: str) -> str:
     elif program == BenefitProgram.WIC:
         if state_upper in WIC_STATE_DIRECTORY_LINKS:
             return WIC_STATE_DIRECTORY_LINKS[state_upper]
+    elif program == BenefitProgram.MEDICAID_CHIP:
+        if state_upper in MEDICAID_STATE_DIRECTORY_LINKS:
+            return MEDICAID_STATE_DIRECTORY_LINKS[state_upper]
     return PROGRAM_APPLY_LINKS.get(program.value, "https://www.benefits.gov")
 

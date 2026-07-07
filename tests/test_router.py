@@ -37,7 +37,7 @@ def test_router_populates_links(build_request):
     updated_results = event.output
     
     assert updated_results[0].apply_link == "https://www.fna.usda.gov/snap-directory-entry/ohio"
-    assert updated_results[1].apply_link == "https://www.healthcare.gov/medicaid-chip/"
+    assert updated_results[1].apply_link == "https://www.benefits.gov"
 
 
 
